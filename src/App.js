@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom' ;
+import { Switch, Route } from 'react-router-dom' ;
 import './App.css';
+import About from './About' ;
+import Portfolio from './Portfolio' ;
+import Contacts from './contacts/Contacts' ;
 
 class App extends Component {
+
     render() {
 
         return (
             <div className="App">
-                <div className="App-nav">
+                <nav className="App-nav">
                     <NavLink activeClassName="active" to='/' className="App-nav-link" exact >Home</NavLink>
-                    <NavLink activeClassName="active" to='/portfolio' className="App-nav-link">Portfolio</NavLink>
-                    <NavLink activeClassName="active" to='/contacts' className="App-nav-link">Contacts</NavLink>
-                </div>
+                    <NavLink activeClassName="active" to='/portfolio' className="App-nav-link">Примеры работ</NavLink>
+                    <NavLink activeClassName="active" to='/contacts' className="App-nav-link">Контакты</NavLink>
+                </nav>
                 <div className="App-tab-content">
-                    <p>Some text</p>
-                    <p>Some text</p>
-                    <p>Some text</p>
-                    <p>Some text</p>
-                    <p>Some text</p>
+                    <Switch>
+                        <Route exact path='/' component={About}/>
+                        <Route path='/portfolio' component={Portfolio}/>
+                        <Route path='/contacts' component={Contacts}/>
+                    </Switch>
                 </div>
             </div>
         );
