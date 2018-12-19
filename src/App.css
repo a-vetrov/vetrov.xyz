@@ -49,3 +49,14 @@
   padding: 20px;
 }
 
+@keyframes App-tab-content_appear-animation {
+    from {opacity:0; transform: scaleY(0.1);}
+    to {opacity: 1; transform: scaleY(1);}
+}
+
+.App-tab-content > div {
+    animation-name: App-tab-content_appear-animation;
+    animation-duration: 0.3s;
+    transform-origin: 0 0;
+}
+
