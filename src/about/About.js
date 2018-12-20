@@ -27,7 +27,7 @@ class About extends Component {
 
     generateItems(names) {
         return names.map( (s)  => {
-            return (<div className="About-item">
+            return (<div className="About-item" key={"About-item" + s}>
                     <span className={'About-icon About-icon-' + this.iconStyles[s]} />
                     {s}
                 </div> ) ;
@@ -43,15 +43,15 @@ class About extends Component {
                 </p>
                 <p>Имею опыт работы со следующими технологиями:</p>
                 <h2 className="About-h2 ">Frontend</h2>
-                <p className="About-row">{this.generateItems(this.frotendNames)}</p>
+                <div className="About-row">{this.generateItems(this.frotendNames)}</div>
                 <h2 className="About-h2 ">Frameworks</h2>
-                <p className="About-row">{this.generateItems(this.frameworksNames)}</p>
+                <div className="About-row">{this.generateItems(this.frameworksNames)}</div>
                 <h2 className="About-h2 ">Инструменты</h2>
-                <p className="About-row">{this.generateItems(this.toolsNames)}</p>
+                <div className="About-row">{this.generateItems(this.toolsNames)}</div>
                 <h2 className="About-h2 ">ПО</h2>
-                <p className="About-row">{this.generateItems(this.softwareNames)}</p>
+                <div className="About-row">{this.generateItems(this.softwareNames)}</div>
                 <p>Немного знаком с языками программирования:</p>
-                <p className="About-row">{this.generateItems(this.languagesNames)}</p>
+                <div className="About-row">{this.generateItems(this.languagesNames)}</div>
             </div>
         );
     }

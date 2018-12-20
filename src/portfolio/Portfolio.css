@@ -1,0 +1,22 @@
+.Portfolio-card {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.Portfolio-card-header {
+    border-bottom: 1px solid #cccccc;
+    font-size: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-weight: 500;
+    margin: 0;
+    background-color: rgba(0,0,0,.03);
+}
+
+.Portfolio-card-body {
+    padding: 20px;
+}
+
+.Portfolio-card-body > p {
+    margin: 0;
+}
