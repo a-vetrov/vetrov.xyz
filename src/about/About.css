@@ -1,0 +1,162 @@
+.About-item {
+    border: solid 1px #dee2e6;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    width:60px;
+}
+
+.About-h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.About-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.About-icon {
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+}
+
+.About-icon-as3 {
+    background-position: -5px -5px;
+}
+
+.About-icon-bitbucket {
+    background-position: -65px -5px;
+}
+
+.About-icon-bootstrap {
+    background-position: -125px -5px;
+}
+
+.About-icon-cpp {
+    background-position: -185px -5px;
+}
+
+.About-icon-css3 {
+    background-position: -245px -5px;
+}
+
+.About-icon-es5 {
+    background-position: -5px -65px;
+}
+
+.About-icon-es6 {
+    background-position: -65px -65px;
+}
+
+.About-icon-excel {
+    background-position: -125px -65px;
+}
+
+.About-icon-flash {
+    background-position: -185px -65px;
+}
+
+.About-icon-git {
+    background-position: -245px -65px;
+}
+
+.About-icon-github {
+    background-position: -5px -125px;
+}
+
+.About-icon-grunt {
+    background-position: -65px -125px;
+}
+
+.About-icon-html5 {
+    background-position: -125px -125px;
+}
+
+.About-icon-idea {
+    background-position: -185px -125px;
+}
+
+.About-icon-illustrator {
+    background-position: -245px -125px;
+}
+
+.About-icon-jira {
+    background-position: -5px -185px;
+}
+
+.About-icon-jquery {
+    background-position: -65px -185px;
+}
+
+.About-icon-js {
+    background-position: -125px -185px;
+}
+
+.About-icon-json {
+    background-position: -185px -185px;
+}
+
+.About-icon-nodejs {
+    background-position: -245px -185px;
+}
+
+.About-icon-npm {
+    background-position: -5px -245px;
+}
+
+.About-icon-outlook {
+    background-position: -65px -245px;
+}
+
+.About-icon-photoshop {
+    background-position: -125px -245px;
+}
+
+.About-icon-php {
+    background-position: -185px -245px;
+}
+
+.About-icon-powerpoint {
+    background-position: -245px -245px;
+}
+
+.About-icon-project {
+    background-position: -305px -5px;
+}
+
+.About-icon-python {
+    background-position: -305px -65px;
+}
+
+.About-icon-react {
+    background-position: -305px -125px;
+}
+
+.About-icon-svn {
+    background-position: -305px -185px;
+}
+
+.About-icon-webpack {
+    background-position: -305px -245px;
+}
+
+.About-icon-webstorm {
+    background-position: -5px -305px;
+}
+
+.About-icon-word {
+    background-position: -65px -305px;
+}
+
+.About-icon-xml {
+    background-position: -125px -305px;
+}

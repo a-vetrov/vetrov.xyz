@@ -60,3 +60,10 @@
     transform-origin: 0 0;
 }
 
+.App-copyright {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
