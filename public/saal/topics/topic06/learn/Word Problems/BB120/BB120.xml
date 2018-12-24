@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB120</UID>
+	</attributes>
+	<content>
+
+		<img src="img/bg.png" id="bg" style="position:absolute; top:50px; left:60px;"/>
+
+		<div id="cta1" style="position:absolute; top:106px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ta1" width="285"/>
+		</div>
+		<div id="cta2" style="position:absolute; top:156px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ta2" width="285"/>
+		</div>
+		<div id="cta3" style="position:absolute; top:206px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ta3" width="285"/>
+		</div>
+
+		<div id="cts1" style="position:absolute; top:345px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ts1" width="285"/>
+		</div>
+		<div id="cts2" style="position:absolute; top:395px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ts2" width="285"/>
+		</div>
+		<div id="cts3" style="position:absolute; top:445px; left:73px; text-align:center; display:none;">
+			<dndTarget id="ts3" width="285"/>
+		</div>
+
+		<div id="ctm1" style="position:absolute; top:106px; left:408px; text-align:center; display:none;">
+			<dndTarget id="tm1" width="285"/>
+		</div>
+		<div id="ctm2" style="position:absolute; top:156px; left:408px; text-align:center; display:none;">
+			<dndTarget id="tm2" width="285" />
+		</div>
+		<div id="ctm3" style="position:absolute; top:206px; left:408px; text-align:center; display:none;">
+			<dndTarget id="tm3" width="285"/>
+		</div>
+
+		<div id="ctd1" style="position:absolute; top:345px; left:408px; text-align:center; display:none;">
+			<dndTarget id="td1" width="285"/>
+		</div>
+		<div id="ctd2" style="position:absolute; top:395px; left:408px; text-align:center; display:none;">
+			<dndTarget id="td2" width="285"/>
+		</div>
+		<div id="ctd3" style="position:absolute; top:445px; left:408px; text-align:center; display:none;">
+			<dndTarget id="td3" width="285"/>
+		</div>
+
+
+		<div  id="cc1" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c1" width="285" style="position:absolute; top:0px; left:-735px;">more than</dndCard>
+		</div>
+		<div  id="cc2" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c2" width="285" style="position:absolute; top:0px; left:-735px;">less than</dndCard>
+		</div>
+		<div  id="cc3" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c3" width="285" style="position:absolute; top:0px; left:-735px;">times</dndCard>
+		</div>
+		<div  id="cc4" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c4" width="285" style="position:absolute; top:0px; left:-735px;">times fewer</dndCard>
+		</div>
+		<div  id="cc5" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c5" width="285" style="position:absolute; top:0px; left:-735px;">in total</dndCard>
+		</div>
+		<div  id="cc6" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c6" width="285" style="position:absolute; top:0px; left:-735px;">the rest</dndCard>
+		</div>
+		<div  id="cc7" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c7" width="285" style="position:absolute; top:0px; left:-735px;">each-altogether</dndCard>
+		</div>
+		<div  id="cc8" style="position:absolute; top:650px; left:240px;">
+			<dndCard id="c8" width="285" style="position:absolute; top:0px; left:-735px; white-space:nowrap;">how many times larger</dndCard>
+		</div>
+
+		<div id="robo" style="position:absolute; top:520px; left:-250px;"> <!-- left:485px; -->
+			<img id="robo_body" src="img/robo_body.png" style="position:absolute; top:0px; left:0px;"/>
+			<img id="robo_wheel" src="img/robo_wheel.png" style="position:absolute; top:182px; left:121px;"/>
+		</div>
+
+	</content>
+	<steps>
+		<next/>
+		<step soundID="V010">
+			<drop id="cta1" delay="10"/>
+			<drop id="cts1" delay="10.2"/>
+			<drop id="ctm1" delay="10.4"/>
+			<drop id="ctd1" delay="10.6"/>
+
+			<animate id="c1" x="0" time="1.5" easing="easeOutCubic" delay="11"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="11"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="11"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="12.5"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="12.5"/>
+			<play id="motion" delay="11"/>
+
+		</step>
+		<submit id="Q1">
+			<controls>
+				<dndControl id="dnd1" correctAnswer="c1,,," cards="c1" targets="ta1,ts1,tm1,td1"/>
+			</controls>
+		</submit>
+		<next if="Q1.incorrect"/>
+		<step if="Q1.incorrect">
+			<dndMove id="dnd1" />
+		</step>
+		<next if="Q1.incorrect"/>
+		<step>
+			<hide id="ta1" keepContent="true"/>
+			<hide id="cc1"/>
+		</step>
+
+		<step>
+			<drop id="cta2"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c2" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q2">
+			<controls>
+				<dndControl id="dnd2" correctAnswer=",c2,," cards="c2" targets="ta2,ts1,tm1,td1"/>
+			</controls>
+		</submit>
+		<next if="Q2.incorrect"/>
+		<step if="Q2.incorrect">
+			<dndMove id="dnd2" />
+		</step>
+		<next if="Q2.incorrect"/>
+		<step>
+			<hide id="ts1" keepContent="true"/>
+			<hide id="cc2"/>
+		</step>
+
+		<step>
+			<drop id="cts2"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c3" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q3">
+			<controls>
+				<dndControl id="dnd3" correctAnswer=",,c3," cards="c3" targets="ta2,ts2,tm1,td1"/>
+			</controls>
+		</submit>
+		<next if="Q3.incorrect"/>
+		<step if="Q3.incorrect">
+			<dndMove id="dnd3" />
+		</step>
+		<next if="Q3.incorrect"/>
+		<step>
+			<hide id="tm1" keepContent="true"/>
+			<hide id="cc3"/>
+		</step>
+
+
+		<step>
+			<drop id="ctm2"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c4" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q4">
+			<controls>
+				<dndControl id="dnd4" correctAnswer=",,,c4" cards="c4" targets="ta2,ts2,tm2,td1"/>
+			</controls>
+		</submit>
+		<next if="Q4.incorrect"/>
+		<step if="Q4.incorrect">
+			<dndMove id="dnd4" />
+		</step>
+		<next if="Q4.incorrect"/>
+		<step>
+			<hide id="td1" keepContent="true"/>
+			<hide id="cc4"/>
+		</step>
+
+
+		<step>
+			<drop id="ctd2"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c5" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q5">
+			<controls>
+				<dndControl id="dnd5" correctAnswer="c5,,," cards="c5" targets="ta2,ts2,tm2,td2"/>
+			</controls>
+		</submit>
+		<next if="Q5.incorrect"/>
+		<step if="Q5.incorrect">
+			<dndMove id="dnd5" />
+		</step>
+		<next if="Q5.incorrect"/>
+		<step>
+			<hide id="ta2" keepContent="true"/>
+			<hide id="cc5"/>
+		</step>
+
+
+		<step>
+			<drop id="cta3"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c6" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q6">
+			<controls>
+				<dndControl id="dnd6" correctAnswer=",c6,," cards="c6" targets="ta3,ts2,tm2,td2"/>
+			</controls>
+		</submit>
+		<next if="Q6.incorrect"/>
+		<step if="Q6.incorrect">
+			<dndMove id="dnd6" />
+		</step>
+		<next if="Q6.incorrect"/>
+		<step>
+			<hide id="ts2" keepContent="true"/>
+			<hide id="cc6"/>
+		</step>
+
+
+		<step>
+			<drop id="cts3"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c7" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q7">
+			<controls>
+				<dndControl id="dnd7" correctAnswer=",,c7," cards="c7" targets="ta3,ts3,tm2,td2"/>
+			</controls>
+		</submit>
+		<next if="Q7.incorrect"/>
+		<step if="Q7.incorrect">
+			<dndMove id="dnd7" />
+		</step>
+		<next if="Q7.incorrect"/>
+		<step>
+			<hide id="tm2" keepContent="true"/>
+			<hide id="cc7"/>
+		</step>
+
+
+		<step>
+			<drop id="ctm3"/>
+			<animate id="robo" x="-250" time="0" />
+
+			<animate id="c8" x="0" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<animate id="robo" x="485" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="0.5"/>
+			<play id="motion" delay="0.5"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="2"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="2"/>
+		</step>
+		<submit id="Q8">
+			<controls>
+				<dndControl id="dnd8" correctAnswer=",,,c8" cards="c8" targets="ta3,ts3,tm3,td2"/>
+			</controls>
+		</submit>
+		<next if="Q8.incorrect"/>
+		<step if="Q8.incorrect">
+			<dndMove id="dnd8" />
+		</step>
+		<next if="Q8.incorrect"/>
+		<step>
+			<hide id="td2" keepContent="true"/>
+			<hide id="ta3"/>
+			<hide id="ts3"/>
+			<hide id="tm3"/>
+			<hide id="cc8"/>
+		</step>
+		<step soundID="V020">
+			<circleMarker id="bg" delay="0.5" dx="-40"/>
+		</step>
+
+		<next/>
+
+	</steps>
+	<soundEffects>
+		<sound id="motion" src="sounds/motion.mp3"/>
+	</soundEffects>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>It was fun! Conducting investigations, revealing secrets, finding clues… Let’s recall what did we find out about word problems. Sort these out!</ttsText>
+		</sound>
+		<sound id="V020" src="sounds/V020.mp3">
+			<ttsText>Save this outline. It will help you solve other mysteries. Adios!</ttsText>
+		</sound>
+	</sounds>
+</problem>

@@ -6,20 +6,39 @@
 
 .Portfolio-card-header {
     border-bottom: 1px solid #cccccc;
-    font-size: 20px;
+    font-size: 18px;
     padding: 12px 20px;
     box-sizing: border-box;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     background-color: rgba(0,0,0,.03);
 }
 
 .Portfolio-card-body {
     padding: 20px;
+    overflow: hidden;
 }
+
+.Portfolio-card-body > img {
+    border-radius: 5px;
+    padding: 5px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes Portfolio-card-details_appear-animation {
+    0% { max-height: 0; }
+    100% {  max-height:400px;  }
+}
+
 
 .Portfolio-card-details {
     padding: 0 20px 20px 20px;
+    animation-name: Portfolio-card-details_appear-animation;
+    animation-duration: 1s;
+    overflow: hidden;
+    max-height:100%;
 }
 
 .Portfolio-card-details > p:first-child, .Portfolio-card-body > p:first-child {
@@ -45,19 +64,23 @@
     line-height: 1.5;
     border-radius: 4px;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
+    margin: 0 0 0 10px;
 }
 
 .Portfolio-card-button:hover {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+    outline: none;
 }
 
 .Portfolio-card-button:active, .Portfolio-card-button:focus {
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+    outline: none;
 }
 
 .Portfolio-card-buttons-container {
-    text-align: right;
+    text-align: left;
     padding: 0 20px 20px 0;
 }

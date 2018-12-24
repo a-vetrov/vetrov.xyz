@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB110</UID>
+	</attributes>
+	<content>
+
+		<div id="T1" style="position:absolute; top:50px; left:50px; white-space:nowrap; display:none;">
+			<p>
+				Ali and Mansour collect seashells. Ali has <span id="T1_5p">5 pouches</span> of <br/>
+				seashells. And Mansour has <span id="T1_4">4</span> of the same pouches. <span id="T1_quest1">How</span> <br/>
+				<span id="T1_quest2">many seashells does Mansour have if Ali has <span id="T1_325">325</span> seashells?</span>
+			</p>
+		</div>
+
+		<img src="img/cloud.png" id="cloud" style="position:absolute; top:20px; left:250px; display:none;"/>
+		<img src="img/spray.png" id="spray" style="position:absolute; top:200px; left:-200px; display:none;"/>
+		<div id="T1_white" style="position:absolute; top:50px; left:50px; white-space:nowrap; display:none; color:white;">
+			<p>
+				Ali had 46 seashells in his collection. This is 230 seashells <br/>
+				less than Mansour has. How many times is Mansour’s <br/>
+				collection larger than Ali’s?
+			</p>
+		</div>
+
+		<div id="shorthand" style="position:absolute; top:200px; left:100px;">
+			<div id="sh_1_1" style="position:absolute; top:0px; left:0px; width:120px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">Ali</div>
+			<div id="sh_1_2" style="position:absolute; top:70px; left:0px; width:120px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">Mansour</div>
+
+			<div id="sh_2_1" style="position:absolute; top:0px; left:140px; width:200px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">5 pouches</div>
+			<div id="sh_2_2" style="position:absolute; top:70px; left:140px; width:200px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">
+				<input id="input2" type="number" maxlength="3"/> pouches
+			</div>
+
+			<div id="sh_3_1" style="position:absolute; top:0px; left:360px; width:200px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">
+				<input id="input1" type="number" maxlength="3"/> seashells
+			</div>
+			<div id="sh_3_2" style="position:absolute; top:70px; left:360px; width:200px; height:60px; background:#F5F5F5; line-height:60px; padding-left:10px; display:none;">? seashells</div>
+		</div>
+
+		<div id="T3" style="position:absolute; top:350px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p><span style="font-size:36px;">1)</span> <span id="T3_span"><dndTarget id="dt1" width="150"/> = </span>
+				<span id="input3_wrap"><input id="input3" type="number"/></span>
+				<span id="input3_2" style="font-size:36px; display:none;">65</span>
+				(seashells)  - in one pouch
+			</p>
+		</div>
+		<div id="T3_dnd" style="position:absolute; top:450px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p>
+				<dndCard id="dc1" width="150">325 + 5</dndCard>
+				<dndCard id="dc2" width="150">325 - 5</dndCard>
+				<dndCard id="dc3" width="150">325 × 5</dndCard>
+				<dndCard id="dc4" width="150">325 ÷ 5</dndCard>
+			</p>
+		</div>
+
+		<img id="T4" src="img/column01.png" style="position:absolute; top:430px; left:88px; display:none;"/>
+		<div id="input3_replace" style="position:absolute; top:432px; left:125px; opacity:0; color:red; display:none;">65</div>
+
+		<div id="T5" style="position:absolute; top:430px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p><span style="font-size:36px;">2)</span> <span id="T5_span"><dndTarget id="ddt1" width="150"/> = </span>
+				<span id="input4_wrap"><input id="input4" type="number" maxlength="4"/></span>
+				<span id="input4_2" style="font-size:36px; display:none;">260</span>
+				(seashells)  - in Mansour’s collection
+			</p>
+		</div>
+		<div id="T5_dnd" style="position:absolute; top:530px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p>
+				<dndCard id="ddc1" width="150">65 + 4</dndCard>
+				<dndCard id="ddc2" width="150">65 - 4</dndCard>
+				<dndCard id="ddc3" width="150">65 × 4</dndCard>
+				<dndCard id="ddc4" width="150">65 ÷ 4</dndCard>
+			</p>
+		</div>
+
+		<img id="T6" src="img/column02.png" style="position:absolute; top:500px; left:88px; display:none;"/>
+		<div id="input4_replace" style="position:absolute; top:563px; left:100px; opacity:0; color:red; display:none; ">260</div>
+
+		<div id="P1" style="position:absolute; top:100px; left:20px;">
+			<div id="P1_wrap" style="position:absolute; top:0px; left:0px;">
+				<img src="img/P1.png" style="position:absolute; top:0px; left:0px;"/>
+				<img src="img/cover03.png" id="cover03" style="position:absolute; top:15px; left:475px;"/>
+			</div>
+		</div>
+
+		<div id="robo" style="position:absolute; top:320px; left:600px; display:none;">
+			<img id="robo_body" src="img/robo_body.png" style="position:absolute; top:0px; left:0px;"/>
+			<img id="robo_wheel" src="img/robo_wheel.png" style="position:absolute; top:182px; left:121px;"/>
+		</div>
+
+
+
+	</content>
+	<steps>
+		<next/>
+		<step>
+			<scale2 id="P1" scale="0.3" origin="left bottom" time="0.5"/>
+			<rotate2 id="P1_wrap" from="0" to="-20" delay="0" time="0.5"/>
+			<animate id="P1" x="50" y="880" time="0.5" easing="easeInSine"/>
+			<play id="fly"/>
+		</step>
+		<step>
+			<show id="spray"/>
+			<animate id="spray" x="-100" time="0.3"/>
+			<play id="spray" delay="0.5"/>
+			<show id="T1_white" delay="0.5"/>
+			<show id="cloud" delay="0.5"/>
+			<scale2 id="cloud" delay="0.5" time="1.5" from="1" scale="4"/>
+			<animate id="cloud" delay="1.3" opacity="0" time="0.5"/>
+			<show id="T1" delay="1.5"/>
+			<hide id="T1_white" delay="1.5"/>
+			<animate id="spray" x="-400" time="0.3" delay="1.2"/>
+		</step>
+		<step soundID="V010">
+			<hide id="cloud"/>
+			<hide id="spray"/>
+			<circleMarker id="T1" delay="1" dx="-40"/>
+			<underlineMarker id="T1_5p" delay="7.5"  color="none"/>
+			<pointMarker id="T1_4" delay="11"/>
+
+			<underlineMarker id="T1_quest1" delay="13" color="none" standby="-1"/>
+			<underlineMarker id="T1_quest2" delay="14" color="none"/>
+		</step>
+		<step soundID="V020">
+			<drop id="sh_1_1" delay="4"/>
+			<drop id="sh_2_1" delay="4.5"/>
+
+			<underlineMarker id="T1_5p" delay="3"  color="none"/>
+			<drop id="sh_3_1" delay="6.5"/>
+		</step>
+		<submit id="Q1">
+			<controls>
+				<control id="input1" correctAnswer="325"/>
+			</controls>
+		</submit>
+		<next if="Q1.incorrect"/>
+		<step>
+			<replaceAnswerInput id="input1"  positionObject="T1_325"/>
+		</step>
+		<next if="Q1.incorrect"/>
+		<step soundID="V025" if="Q1.correct"/>
+		<step soundID="V030">
+			<drop id="sh_1_2" delay="1"/>
+			<drop id="sh_2_2" delay="1.5"/>
+		</step>
+		<submit id="Q2">
+			<controls>
+				<control id="input2" correctAnswer="4"/>
+			</controls>
+		</submit>
+		<next if="Q2.incorrect"/>
+		<step>
+			<replaceAnswerInput id="input2"  positionObject="T1_4"/>
+		</step>
+		<next if="Q2.incorrect"/>
+		<step soundID="V040">
+			<underlineMarker id="T1_quest1" delay="1" color="none" standby="-1"/>
+			<underlineMarker id="T1_quest2" delay="2" color="none"/>
+			<drop id="sh_3_2" delay="3"/>
+
+			<underlineMarker id="sh_2_1,sh_3_1" delay="9.8" color="none"/>
+
+			<show id="T3" delay="11"/>
+
+			<show id="T3_dnd" />
+			<show id="robo" />
+			<animate id="T3_dnd" x="-=850" time="0"/>
+			<animate id="robo" x="-=850" time="0"/>
+
+			<play id="motion" delay="12"/>
+
+			<animate id="T3_dnd" x="+=850" time="1.5" easing="easeOutCubic" delay="12"/>
+			<animate id="robo" x="+=850" time="1.5" easing="easeOutCubic" delay="12"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="12"/>
+
+			<animate id="robo" x="+=200" time="0.5" easing="easeInCubic" delay="13.5"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="13.5"/>
+			<!--<drop id="T3_dnd" delay="10"/>-->
+		</step>
+		<submit id="Q3">
+			<controls>
+				<control id="input3" correctAnswer="65"/>
+				<dndControl id="dnd1" correctAnswer="dc4" cards="dc1,dc2,dc3,dc4" targets="dt1"/>
+			</controls>
+		</submit>
+
+		<next if="Q3.incorrect"/>
+		<step if="dnd1.incorrect">
+			<dndMove id="dnd1" />
+		</step>
+		<step>
+			<hide id="T3_dnd"/>
+			<hide id="dt1" keepContent="true" delay="0.5"/>
+		</step>
+		<step if="input3.incorrect">
+			<drop id="T4"/>
+			<css id="input3_replace" style="display:block;"/>
+		</step>
+		<step>
+			<replaceAnswerInput id="input3" positionObject="input3_replace"/>
+		</step>
+		<next if="Q3.incorrect"/>
+		<step>
+			<css id="T3_span" style="font-size:36px;"/>
+			<css id="input3_wrap" style="display:none;"/>
+			<css id="input3_2" style="display:inline;"/>
+			<hide id="T4"/>
+			<hide id="input3_replace"/>
+		</step>
+		<step soundID="V060">
+			<underlineMarker id="T1_quest1" delay="3" color="none" standby="-1"/>
+			<underlineMarker id="T1_quest2" delay="4" color="none"/>
+			<show id="T5" delay="5"/>
+			<!--<drop id="T5_dnd" delay="1.5"/>-->
+
+			<animate id="T5_dnd" x="-=850" time="0"/>
+			<animate id="robo" x="-250" y="400" time="0" delay="1.4"/>
+
+			<show id="robo" />
+			<show id="T5_dnd" />
+
+			<play id="motion" delay="5.5"/>
+
+			<animate id="T5_dnd" x="+=850" time="1.5" easing="easeOutCubic" delay="5.5"/>
+			<animate id="robo" x="+=850" time="1.5" easing="easeOutCubic" delay="5.5"/>
+			<rotate2 id="robo_wheel" from="0" to="720" time="1.5" easing="easeOutCubic" delay="5.5"/>
+
+			<animate id="robo" x="+=200" time="0.5" easing="easeInCubic" delay="7"/>
+			<rotate2 id="robo_wheel" from="0" to="360" time="0.5" easing="easeInCubic" delay="7"/>
+
+		</step>
+		<submit id="Q4">
+			<controls>
+				<control id="input4" correctAnswer="260"/>
+				<dndControl id="dnd2" correctAnswer="ddc3" cards="ddc1,ddc2,ddc3,ddc4" targets="ddt1"/>
+			</controls>
+		</submit>
+		<step soundID="V070" if="Q4.correct">
+		</step>
+		<step soundID="V080" if="Q4.incorrect">
+		</step>
+		<next if="Q4.incorrect"/>
+		<step if="dnd2.incorrect">
+			<dndMove id="dnd2" />
+		</step>
+		<step>
+			<hide id="T5_dnd"/>
+			<hide id="ddt1" keepContent="true" delay="0.5"/>
+		</step>
+		<step if="input4.incorrect">
+			<drop id="T6"/>
+			<css id="input4_replace" style="display:block;"/>
+		</step>
+		<step>
+			<replaceAnswerInput id="input4" positionObject="input4_replace"/>
+		</step>
+		<next if="Q4.incorrect"/>
+		<step>
+			<css id="T5_span" style="font-size:36px;"/>
+			<css id="input4_wrap" style="display:none;"/>
+			<css id="input4_2" style="display:inline;"/>
+			<hide id="T6"/>
+			<hide id="input4_replace"/>
+		</step>
+		<step soundID="V090">
+			<hide id="T1"/>
+			<scale2 id="P1" scale="1" time="0.5"/>
+			<play id="fly" />
+			<rotate2 id="P1_wrap" from="-20" to="0" delay="0" time="0.5"/>
+			<animate id="P1" x="20" y="100" time="0.5" easing="easeOutBack"/>
+
+			<scale2 id="cover03" scale="1.1" time="0.2" delay="0.4"/>
+			<scale2 id="cover03" scale="1.0" time="0.2" delay="0.6"/>
+			<rotate2 id="cover03" from="0" to="-20" easing="easeOutBack" time="0.5" delay="0.8" origin="90% 10%"/>
+			<animate id="cover03" y="1200" time="0.5" delay="1.3" easing="easeInCubic"/>
+			<play id="drop" delay="1.8"/>
+		</step>
+	</steps>
+	<soundEffects>
+		<sound id="drop" src="sounds/bulb_smash.mp3"/>
+		<sound id="fly" src="sounds/fly.mp3"/>
+		<sound id="spray" src="sounds/spray.mp3"/>
+		<sound id="motion" src="sounds/motion.mp3"/>
+	</soundEffects>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>Okay, this is the last piece! Ali and Mansour collect seashells. Ali has 5 pouches of seashells. And Mansour has 4 of the same pouches. How many seashells does Mansour have if Ali has 325 seashells?</ttsText>
+		</sound>
+		<sound id="V020" src="sounds/V020.mp3">
+			<ttsText>Let’s find some clues. Ali has 5 pouches with shells. Hmm.. how many shells in them? </ttsText>
+		</sound>
+		<sound id="V025" src="sounds/V025.mp3">
+			<ttsText>Good.</ttsText>
+		</sound>
+		<sound id="V030" src="sounds/V030.mp3">
+			<ttsText>How many pouches does Mansour have?</ttsText>
+		</sound>
+		<sound id="V040" src="sounds/V040.mp3">
+			<ttsText>And we need to find how many shells he has... I believe there is one clue missing - number of shells in one pouch. Remember the first clues? Find the missing piece.</ttsText>
+		</sound>
+		<sound id="V060" src="sounds/V060.mp3">
+			<ttsText>You are ready to reveal a secret! How many seashells does Mansour have? </ttsText>
+		</sound>
+		<sound id="V070" src="sounds/V070.mp3">
+			<ttsText>Excellent! </ttsText>
+		</sound>
+		<sound id="V080" src="sounds/V080.mp3">
+			<ttsText>Don’t worry, keep practicing!</ttsText>
+		</sound>
+		<sound id="V090" src="sounds/V090.mp3">
+			<ttsText>Woo-hoo! These boys became fishermen!</ttsText>
+		</sound>
+	</sounds>
+</problem>

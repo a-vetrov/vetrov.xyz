@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BBFS</UID>
+	</attributes>
+	<content header="false" bgcolor="#9657FF">
+		<img id="back" src="bg.png" style="position:absolute; top:0px; left:0px;"/>
+	</content>
+	<steps>
+		<pause delay="1"/>
+	</steps>
+</problem>

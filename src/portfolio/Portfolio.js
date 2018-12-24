@@ -16,10 +16,20 @@ class Portfolio extends Component {
 
         return (
             <div>
-                <Card key="Saal" onDetailsClick={this.handleDetailsClick.bind(this, "Saal")} isOpen={this.state.openCardId === "Saal"}>
-                    <header>Some job Title</header>
-                    <body>Some job description</body>
-                    <details>Some job detailed description</details>
+                <Card key="Saal" onDetailsClick={this.handleDetailsClick.bind(this, "Saal")}
+                      isOpen={this.state.openCardId === "Saal"} exampleHref="./saal/topics/topic06/learn/Word%20Problems/">
+                    <header>Saal content player</header>
+                    <body>
+                    Задачей проекта было создание уроков по математике для детей 7 класса в ОАЭ для компании
+                    <a href="http://saal.ai/" target="_blank"  rel="noopener noreferrer"> Saal</a>.</body>
+                    <details>
+                        <p>
+                            Для верстки уроков мной был разработан универсальный XML-формат описания сценария, позволяющий задать последовательность действий, анимаций, вопросов и реакции на различные ответы ученика. Для проигрывания сценариев мной был создан плеер на JavaScript.
+                        </p>
+                        <p>
+                            На данной платформе было создано 20 пилотных уроков, которые проигрываются в нативном приложении с помощью WebView компоненты.
+                        </p>
+                    </details>
                 </Card>
                 <Card key="Saal2" onDetailsClick={this.handleDetailsClick.bind(this, "Saal2")} isOpen={this.state.openCardId === "Saal2"}>
                     <header>Saal content player</header>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB020</UID>
+	</attributes>
+	<content>
+		<div id="puzzle" style="position:absolute; top:107px; left:22px; width:724px; height:508px;">
+			<div id="puzzle1">
+				<img id="picture" src="img/picture.png" style="position:absolute; top:0px; left:0px;"/>
+				<img id="cover2" src="img/cover2.png" style="position:absolute; top:20px; left:190px;"/>
+				<img id="cover3" src="img/cover3.png" style="position:absolute; top:20px; left:362px;"/>
+				<img id="cover4" src="img/cover4.png" style="position:absolute; top:20px; left:535px;"/>
+				<img id="cover5" src="img/cover5.png" style="position:absolute; top:254px; left:19px;"/>
+				<img id="cover6" src="img/cover6.png" style="position:absolute; top:254px; left:190px;"/>
+				<img id="cover7" src="img/cover7.png" style="position:absolute; top:254px; left:362px;"/>
+				<img id="cover8" src="img/cover8.png" style="position:absolute; top:254px; left:535px;"/>
+			</div>
+		</div>
+		
+		<p id="T1" style="position:absolute; top:55px; left:-700px; white-space:nowrap;">
+			At her party Reem got <span id="T1_6p">6 presents</span> from her friends.<br/>
+			And her cousins gave her <span id="T1_12p">12 presents</span> <span id="T1big_morethan">more than</span> her friends.<br/>
+			<span id="T1_q">How many presents did Reem get from her cousins?</span>
+		</p>
+	
+		<p id="answer" style="position:absolute; top:250px; left:800px; font-size:32px; white-space:nowrap;">Answer: <input id="input1" type="number"/> presents</p>
+
+		<div id="T2" style="position:absolute; top:200px; left:50px; white-space:nowrap; width:666px; height:115px; display:none;">
+			<img id="table" src="img/table.png" style="position:absolute; top:0px; left:0px;"/>
+			<span id="tableT1" style="position:absolute; top:12px; left:25px;">Word clue</span>
+			<span id="tableT2" style="position:absolute; top:12px; left:360px;">Math operation</span>
+			<span id="tableT3" style="position:absolute; top:65px; left:25px;">In total, </span>
+			<span id="tableT3_morethan" style="position:absolute; top:65px; left:115px; color:#03A2FF; display:none;">More than</span>
+			<span id="tableT4" style="position:absolute; top:65px; left:360px;">Addition (<span id="tableT4_plus" style="font-weight:bold;">+</span>)</span>
+		</div>
+		
+		
+		<div id="P1_lupa" style="position:absolute; top:54px; left:40px; display:none;">
+			<div id="P1_lupa_zoom" style="position:absolute; top:0px; left:0px; border-radius:35px; width:70px; height:70px; background-color:white; overflow:hidden;">
+				<div id="p1_lupa_content" style="position:absolute; top:0px; left:0px; line-height:40px; white-space:nowrap; font-size:32px;">
+					At her party Reem got <span id="T1big_6">6</span> presents from her friends.<br/>And her cousins gave her <span id="T1big_12">12</span> presents more than her friends.<br/>How many presents did Reem get from her cousins?
+				</div>
+			</div>
+			<img id="lupa" src="img/lupa.png" style="position:absolute; top:-5px; left:-5px;"/>
+		</div>
+		
+		<div id="T3" style="position:absolute; top:350px; left:50px;">
+			<img id="braceTotal" src="img/braceTotal.png" style="position:absolute; top:140px; left:0px; display:none;"/>
+			<img id="line1" src="img/line1.png" style="position:absolute; top:0px; left:0px; display:none;"/>
+			<img id="line2" src="img/line2.png" style="position:absolute; top:130px; left:0px; display:none;"/>
+			<img id="brace1" src="img/brace1.png" style="position:absolute; top:10px; left:0px; display:none;"/>
+			<img id="brace2" src="img/brace2.png" style="position:absolute; top:100px; left:123px; display:none;"/>
+			<img id="dash" src="img/dash.png" style="position:absolute; top:10px; left:123px; display:none;"/>
+			<span id="qu" style="position:absolute; top:165px; left:173px; font-weight:bold; font-size:36px; display:none;">?</span>
+			<span id="number6" style="position:absolute; top:37px; left:53px; color:#FF7733; font-size:36px; display:none;">6</span>
+			<span id="number12" style="position:absolute; top:57px; left:226px; color:#03A2FF; font-size:36px; display:none;">12</span>
+		</div>
+
+		<div id="T4" style="position:absolute; top:600px; left:50px; font-size:36px; white-space:nowrap;">
+			<span id="T4_6" style="position:absolute; top:0px; left:0px; color:#FF7733; font-weight:bold; display:none;">6</span>
+			<span id="T4_plus" style="position:absolute; top:0px; left:35px; font-weight:bold; display:none;">+</span>
+			<span id="T4_qu" style="position:absolute; top:0px; left:38px; font-weight:bold; display:none;">?</span>
+			<span id="T4_12" style="position:absolute; top:0px; left:69px; color:#03A2FF; font-weight:bold; display:none;">12</span>
+			<span id="T4_18" style="position:absolute; top:-5px; left:115px; font-size:24px; display:none;"><span style="font-size:36px; font-weight:bold;">= <input id="input2" type="number"/></span> (presents) - from cousins</span>
+		</div>
+
+		<div id="robo" style="position:absolute; top:420px; left:1120px;"> <!-- left:520px; -->
+			<img id="robo_wheel01" src="img/robo_wheel.png" style="position:absolute; top:256px; left:128px;"/>
+			<img id="robo_wheel02" src="img/robo_wheel.png" style="position:absolute; top:256px; left:185px;"/>
+			<img id="robo_body" src="img/robo_body.png" style="position:absolute; top:0px; left:0px;"/>
+		</div>
+
+	</content>
+	<steps>
+		<next/>
+		<step soundID="V010">
+			<scale2 id="puzzle1" origin="362px 254px" scale="0.34" time="0.5" easing="easeInBack" delay="0.1"/>
+			<animate id="puzzle" x="-130px" y="624px" time="1.5" delay="0.7" easing="easeInCubic"/>
+			<rotate2 id="puzzle" from="0" to="-366" origin="362px 254px" time="1.5" delay="0.7" easing="easeInCubic"/>
+			<animate id="T1" x="50px" delay="1.6" easing="easeInCubic"/>
+			<animate id="answer" x="50px" delay="1.6" easing="easeInCubic"/>
+
+			<underlineMarker id="T1_6p"  color="none" delay="4.7"/>
+			<underlineMarker id="T1_12p" color="none" delay="8"/>
+			<underlineMarker id="T1_q" color="none" delay="10.6"/>
+		</step>
+		<submit id="Q1">
+			<controls>
+				<control id="input1" correctAnswer="18"/>
+			</controls>
+		</submit>
+		<step soundID="V020" if="Q1.correct">
+			<replaceAnswerInput id="input1"/>
+		</step>
+
+		<!--incorrect branch-->
+		<next if="Q1.incorrect"/>
+		<step if="Q1.incorrect">
+			<show id="P1_lupa" delay="0.0"/>
+			<scale2 id="P1_lupa" scale="1" from="2" time="0.5" delay="0.0"/>
+			<scale2 id="p1_lupa_content" scale="1" from="2" time="0.5" delay="0.0"/>
+			<animate id="answer" x="-=800px" time="0.5"/>
+			
+			<rotate2 id="lupa" origin="40px 40px" from="0" to="-90" time="1" delay="0.8"/>
+			<animate id="P1_lupa" x="+=210px" y="+=54px" time="1" delay="0.8"/>
+			<animate id="p1_lupa_content" x="-=280px" y="-=54px" time="1" delay="0.8"/>
+			<rotate2 id="lupa" origin="40px 40px" from="-90" to="-180" time="1" delay="1.8"/>
+			<animate id="P1_lupa" x="+=210px" y="-=27px" time="1" delay="1.8"/>
+			<animate id="p1_lupa_content" x="-=280px" y="+=27px" time="1" delay="1.8"/>
+		</step>
+		<step soundID="V030" if="Q1.incorrect">
+			<blind id="T2" direction="up" time="0.7" delay="0.0"/>
+			<animate id="P1_lupa" x="+=105px" time="1.5" delay="1.0"/>
+			<animate id="p1_lupa_content" x="-=140px" time="1.5" delay="1.0"/>
+			<animate id="T1big_morethan" color="#03A2FF" time="1.5" delay="1.0"/>
+			
+			<animate id="P1_lupa" x="+=90px" y="+=45px" time="0.5" delay="2.6"/>
+			<animate id="p1_lupa_content" x="-=120px" y="-=45px" time="0.5" delay="2.6"/>
+			<rotate2 id="lupa" origin="40px 40px" from="-180" to="0" time="0.5" delay="2.6"/>
+			
+			<moveFrom id="tableT3_morethan" from="T1big_morethan" time="1.0" delay="3.0"/>
+			<animate id="tableT3_morethan" color="#4F5C75" time="1.0" delay="3.0"/>
+			<animate id="T1big_morethan" color="#4F5C75" time="0.1" delay="3.0"/>
+			<pointMarker id="tableT4_plus" delay="4.1"/>
+		</step>
+		<next/>
+		<step if="Q1.incorrect">
+			<animate id="P1_lupa" x="-=370px" y="-=83px" time="0.5" delay="0.0"/>
+			<animate id="p1_lupa_content" x="+=501px" y="+=83px" time="0.5" delay="0.0"/>
+			<blind id="line1" direction="left" time="0.3" delay="0.5"/>
+			<blind id="brace1" direction="left" time="0.3" delay="0.8"/>
+			<moveFrom id="number6" from="T1big_6" fontSize="32" time="0.5" delay="1.5"/>
+			<play id="whistleup" delay="1.5"/>
+			
+			<animate id="P1_lupa" x="+=46px" y="+=40px" time="0.5" delay="2.5"/>
+			<animate id="p1_lupa_content" x="-=54px" y="-=40px" time="0.5" delay="2.5"/>
+			<blind id="line2" direction="left" time="0.3" delay="3"/>
+			<blind id="dash" direction="up" time="0.3" delay="3.3"/>
+			<blind id="brace2" direction="left" time="0.3" delay="3.6"/>
+			<moveFrom id="number12" from="T1big_12" fontSize="32" time="0.5" delay="4"/>
+			<play id="whistleup" delay="4"/>
+			
+			<explode id="lupa" delay="5"/>
+			<hide id="P1_lupa" delay="5.1"/>
+			<blind id="braceTotal" direction="left" time="0.3" delay="5.5"/>
+			<drop id="qu" delay="6.0"/>
+		</step>
+		<step if="Q1.incorrect">
+			<moveFrom id="T4_6" from="number6" time="0.5" delay="0.0"/>
+			<play id="whistleup" delay="0"/>
+			<moveFrom id="T4_plus" from="tableT4_plus" fontSize="24" time="0.5" delay="0.7"/>
+			<play id="whistleup" delay="0.7"/>
+			<moveFrom id="T4_12" from="number12" fontSize="32" time="0.5" delay="1.5"/>
+			<play id="whistleup" delay="1.5"/>
+
+			<animate id="T4_18" x="+=600" time="0"/>
+			<show id="T4_18" />
+
+			<animate id="T4_18" x="-=600" time="1.5" easing="easeOutCubic" delay="2"/>
+			<animate id="robo" x="-=600" time="1.5" easing="easeOutCubic" delay="2"/>
+			<rotate2 id="robo_wheel01" from="0" to="-720" time="1.5" easing="easeOutCubic" delay="2"/>
+			<rotate2 id="robo_wheel02" from="0" to="-720" time="1.5" easing="easeOutCubic" delay="2"/>
+			<play id="motion" delay="2"/>
+
+			<animate id="robo" x="+=300" time="0.5" easing="easeInCubic" delay="3.5"/>
+			<rotate2 id="robo_wheel01" from="0" to="360" time="0.5" easing="easeInCubic" delay="3.5"/>
+			<rotate2 id="robo_wheel02" from="0" to="360" time="0.5" easing="easeInCubic" delay="3.5"/>
+
+			<!--<blind id="T4_18" direction="left" delay="3.0"/>-->
+		</step>
+		<submit id="Q2" if="Q1.incorrect">
+			<controls>
+				<control id="input2" correctAnswer="18"/>
+			</controls>
+		</submit>
+		<next if="Q1.incorrect &amp;&amp; Q2.incorrect"/>
+		<step soundID="V040" if="Q1.incorrect &amp;&amp; Q2.correct">
+			<replaceAnswerInput id="input2"/>
+			<animate id="T4_18" y="+=5px" delay="0.2"/>
+		</step>
+		<step soundID="V050" if="Q1.incorrect &amp;&amp; Q2.incorrect">
+			<replaceAnswerInput id="input2"/>
+			<animate id="T4_18" y="+=5px" delay="0.2"/>
+		</step>
+		<next soundID="V050" if="Q1.incorrect &amp;&amp; Q2.incorrect"/>
+		<!--End of Incorrect branch-->
+		<step>
+			<animate id="answer" x="800px" time="0.5" easing="easeOutCubic" if="Q1.correct"/>
+			<animate id="T1" x="-700px" time="0.5" easing="easeOutCubic"/>
+			<hide id="T2,T3,T4"/>
+			<animate id="puzzle" x="22px" y="107px" time="1.5" easing="easeInCubic"/>
+			<rotate2 id="puzzle" from="-366" to="0" origin="362px 254px" time="1.5" easing="easeInCubic"/>
+			<scale2 id="puzzle1" origin="362px 254px" scale="1" time="0.5" easing="easeInBack" delay="1.6"/>
+			<play id="cover" delay="2.4"/>
+			<blind id="cover2" direction="up" delay="2.3" easing="easeInCubic" time="0.2"/>
+		</step>
+	</steps>
+	<soundEffects>
+		<sound id="cover" src="sounds/cover.mp3"/>
+		<sound id="motion" src="sounds/motion.mp3"/>
+		<sound id="whistleup" src="sounds/whistleup.mp3"/>
+	</soundEffects>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>On to the next mystery. At her party Reem got 6 presents from her friends. And her cousins gave her 12 presents more than her friends. How many presents did Reem get from her cousins? Do it all by yourself.</ttsText>
+		</sound>
+		<sound id="V020" src="sounds/V020.mp3">
+			<ttsText>Nicely done!</ttsText>
+		</sound>
+		<sound id="V030" src="sounds/V030.mp3">
+			<ttsText>Remember. "More than" means "plus that much".</ttsText>
+		</sound>
+		<sound id="V040" src="sounds/V040.mp3">
+			<ttsText>Well done.</ttsText>
+		</sound>
+		<sound id="V050" src="sounds/V050.mp3">
+			<ttsText>Be careful next time.</ttsText>
+		</sound>
+	</sounds>
+</problem>

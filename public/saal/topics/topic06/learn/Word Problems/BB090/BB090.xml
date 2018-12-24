@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB090</UID>
+	</attributes>
+	<content>
+		<div id="T1" style="position:absolute; top:50px; left:50px; white-space:nowrap; display:none;">
+			<p>Ali and Mansour collect seashells. Ali has <span id="T1_210">210</span> starfish <br/>
+				shells and <span id="T1_150">150</span> clamshells. But Mansour has
+				<span id="T1_6tf">6 times fewer</span><br/>
+				shells <span id="T1_thanAli">than Ali</span>. <span id="T1_quest">How many shells does Mansour have?</span></p>
+		</div>
+
+		<div id="P1_lupa" style="position:absolute; top:30px; left:30px; display:none;">
+			<div id="P1_lupa_zoom" style="position:absolute; top:10px; left:10px; border-radius:35px; width:70px; height:70px; overflow:hidden; background:white;">
+				<div id="p1_lupa_content" style="position:absolute; top:0px; left:0px; white-space:nowrap; font-size:1.5em;">
+					<p>Ali and Mansour collect seashells. Ali has 210 starfish <br/>
+						shells and 150 clamshells. But Mansour has 6 times fewer<br/>
+						shells than Ali. How many shells does Mansour have?</p>
+				</div>
+			</div>
+			<img src="img/lupa.png" style="position:absolute; top:0; left:0;"/>
+		</div>
+
+		<div id="T2" style="position:absolute; top:200px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p><span style="font-size:36px;">1)</span> <span id="T2_span"><dndTarget id="dt1" width="150"/> = </span>
+				<span id="input1_wrap"><input id="input1" type="number"/></span>
+				<span id="input1_2" style="font-size:36px; display:none;">360</span>
+				(seashells) - in Ali’s collection</p>
+		</div>
+		<div id="T2_dnd" style="position:absolute; top:300px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p>
+				<dndCard id="dc1" width="150">210 + 150</dndCard>
+				<dndCard id="dc2" width="150">210 - 150</dndCard>
+				<dndCard id="dc3" width="150">210 × 150</dndCard>
+				<dndCard id="dc4" width="150">210 ÷ 150</dndCard>
+			</p>
+		</div>
+
+		<div id="T4" style="position:absolute; top:270px; left:50px; width:668px; white-space:nowrap; display:none;">
+			<p>
+				<span style="font-size:36px;">2) 360 <span id="T4_div_sign" style="opacity:0;">÷</span> 6</span>
+				<span id="T4_eq" style="font-size:36px; display:none;"> = </span>
+				<span id="input2_wrap" style="display:none;"><input id="input2" type="number" maxlength="4"/></span>
+				<span id="input2_2" style="font-size:36px; display:none;">60</span>
+				<span id="T4_tail" style="display:none;">(seashells) - in Mansour’s collection</span>
+
+			</p>
+		</div>
+
+		<div id="T4_quest" style="position:absolute; top:350px; left:67px; white-space:nowrap; display:none; width:220px; height:120px;">
+			<div id="T4_popup" class="popup" style="width:150px;">
+				<p style="width:150px; text-align:center;">
+					<select id="listbox2" style="width:150px;" >
+						<option value="add">add</option>
+						<option value="subtract">subtract</option>
+						<option value="multiply">multiply</option>
+						<option value="divide">divide</option>
+					</select>
+				</p>
+			</div>
+			<img id="T4_nose" src="img/nose.png" style="position:absolute; top:-20px; left:90px;"/>
+		</div>
+
+		<img id="column" src="img/column.png" style="position:absolute; top:300px; left:88px; display:none;"/>
+		<div id="input1_replace" style="position:absolute; top:365px; left:120px; opacity:0; display:none;">360</div>
+
+		<div id="choose_div" style="position:absolute; top:200px; left:50px; width:668px;">
+			<choose id="c1" style="width:200px; height:180px; padding:10px 0; position:absolute; top:0; left:0; display:none;">
+				<img src="img/card01.png"/><br/>
+				collections of shells
+			</choose>
+			<choose id="c2" style="width:200px; height:180px; padding:10px 0; position:absolute; top:0; left:230px; display:none;">
+				<img src="img/card02.png"/><br/>
+				vacation
+			</choose>
+			<choose id="c3" style="width:200px; height:180px; padding:10px 0; position:absolute; top:0; left:460px; display:none;">
+				<img src="img/card03.png"/><br/>
+				collections of stones
+			</choose>
+		</div>
+
+		<div id="listbox1_div" class="popup" style="position:absolute; top:300px; left:150px; white-space:nowrap; display:none;">
+			<p>There are
+				<select id="listbox1" style="width:210px;" >
+					<option value="150 more">150 more</option>
+					<option value="3 less">3 less</option>
+					<option value="6 times fewer">6 times fewer</option>
+					<option value="5 times more ">5 times more </option>
+				</select>
+				shells<br/>in Mansour’s collection than in Ali’s.
+			</p>
+
+		</div>
+
+		<img src="img/comics01.png" id="comics01" style="position:absolute; top:100px; left:20px; display:none;"/>
+		<img src="img/comics02.png" id="comics02" style="position:absolute; top:100px; left:20px; display:none;"/>
+		<div id="P1" style="position:absolute; top:100px; left:20px; display:none;">
+			<div id="P1_wrap" style="position:absolute; top:0px; left:0px;">
+				<img src="img/P1.png" style="position:absolute; top:0px; left:0px;"/>
+				<img src="img/cover02.png" id="cover02" style="position:absolute; top:15px; left:250px; display:none;"/>
+				<img src="img/cover03.png" id="cover03" style="position:absolute; top:15px; left:475px; display:none;"/>
+				<img src="img/cover01.png" id="cover01" style="position:absolute; top:15px; left:15px; display:none;"/>
+			</div>
+		</div>
+
+		<div id="intro_robo" style="position:absolute; top:760px; left:100px;">
+			<img src="img/intro_robo_body.png" id="intro_robo_body" style="position:absolute; top:0px; left:0px;"/>
+			<img src="img/intro_robo_hand.png" id="intro_robo_hand" style="position:absolute; top:-74px; left:180px;"/>
+			<img src="img/intro_robo_head.png" id="intro_robo_head" style="position:absolute; top:-85px; left:50px;"/>
+			<img src="img/intro_robo_wheel.png" id="intro_robo_wheel" style="position:absolute; top:138px; left:80px;"/>
+		</div>
+
+		<img id="bug" src="img/bug.png" style="position:absolute; top:880px; left:160px; display:none;"/>
+
+		<div id="robo2" style="position:absolute; top:815px; left:800px; display:none;">
+			<div id="robo2_zoom" style="position:absolute; top:40px; left:-166px; border-radius:50px; width:48px; height:48px; overflow:hidden;">
+				<img src="img/bug_head.png" id="robo2_bug_head" style="position:absolute; top:50px; left:-50px;"/>
+			</div>
+			<img src="img/robo2_base.png" id="robo2_base" style="position:absolute; top:0px; left:0px;"/>
+			<img src="img/robo2_wheel.png" id="robo2_wheel" style="position:absolute; top:81px; left:10px;"/>
+			<img src="img/robo2_body.png" id="robo2_body" style="position:absolute; top:-100px; left:-170px;"/>
+		</div>
+
+		<img src="img/cloud.png" id="cloud" style="position:absolute; top:20px; left:250px; display:none;"/>
+		<div id="T1_white" style="position:absolute; top:50px; left:50px; white-space:nowrap; color:white; display:none;">
+			<p>Ali and Mansour collect seashells. Ali has 210 starfish <br/>
+				shells and 150 clamshells. But Mansour has 6 times fewer<br/>
+				shells than Ali. How many shells does Mansour have?
+			</p>
+		</div>
+		<img src="img/spray.png" id="spray" style="position:absolute; top:200px; left:-200px; display:none;"/>
+
+	</content>
+	<steps>
+		<next/>
+		<step soundID="V010">
+			<animate id="intro_robo_head" x="+=30" y="+=10" time="0.3" delay="0"/>
+			<rotate2 id="intro_robo_head" from="0" to="20" time="0.3" delay="0"/>
+			<rotate2 id="intro_robo_hand" from="0" to="90" easing="easeOutBack" time="0.8" origin="10% 95%"  delay="0.5"/>
+			<rotate2 id="intro_robo_hand" from="90" to="0" easing="easeOutBack" time="1" origin="10% 95%"  delay="1.3"/>
+			<rotate2 id="intro_robo_wheel" from="0" to="720" time="1.5" delay="0.9"/>
+			<animate id="intro_robo" x="+=700" time="1" delay="1.1"/>
+
+			<turnOver id="comics01" delay="2"/>
+			<play id="page" delay="2"/>
+			<dropDown id="comics01" delay="5"/>
+
+			<turnOver id="comics02" delay="5.5"/>
+			<play id="page" delay="5.5"/>
+			<dropDown id="comics02" delay="12"/>
+
+		</step>
+		<pause/>
+		<step>
+			<hide id="intro_robo"/>
+			<turnOver id="P1" delay="0"/>
+			<play id="fly" />
+
+			<blind id="cover01" direction="up" delay="1" time="0.3"/>
+			<blind id="cover02" direction="down" delay="1.1" time="0.3"/>
+			<blind id="cover03" direction="up" delay="1.2" time="0.3"/>
+			<play id="bullet" delay="0.9"/>
+
+		</step>
+		<step soundID="V020">
+			<scale2 id="P1" scale="0.3" origin="left bottom" time="0.5"/>
+			<rotate2 id="P1_wrap" from="0" to="-20" delay="0" time="0.5"/>
+			<animate id="P1" x="50" y="880" time="0.5" easing="easeInSine"/>
+
+			<animate id="bug" x="-=200" y="-=600" time="0"/>
+			<show id="bug" delay="1"/>
+			<animate id="bug" time="0.5" delay="1" easing="easeOutSine" x="+=200"/>
+			<animate id="bug" time="0.5" delay="1" easing="easeOutBounce" y="+=600"/>
+
+			<show id="robo2" delay="2"/>
+			<rotate2 id="robo2_body" from="0" to="30" time="0"/>
+			<rotate2 id="robo2_body" from="30" to="0" time="0.5"  delay="2.5"/>
+			<rotate2 id="robo2_wheel" from="0" to="-720" time="1" easing="easeOutSine" delay="2"/>
+			<animate id="robo2" x="350" time="1" easing="easeOutSine" delay="2"/>
+			<animate id="robo2_bug_head" delay="2.6" x="0" y="0" time="0.5"/>
+
+			<rotate2 id="robo2_body" from="0" to="30" time="0.5"  delay="3.5"/>
+			<animate id="robo2_bug_head" delay="3.5" x="-50" y="-50" time="0.3"/>
+			<rotate2 id="robo2_wheel" from="0" to="-720" time="1" easing="easeInSine" delay="4"/>
+			<animate id="robo2" x="-350" time="1" easing="easeInSine" delay="4"/>
+
+			<animate id="bug" x="800" time="1" easing="easeInSine" delay="4"/>
+			<animate id="bug" y="+=50" time="1" easing="easeOutBounce" delay="4"/>
+		</step>
+		<step>
+			<hide id="bug"/>
+			<hide id="robo2"/>
+
+			<show id="spray"/>
+			<animate id="spray" x="-100" time="0.3"/>
+			<play id="spray" delay="0.5"/>
+			<show id="T1_white" delay="0.5"/>
+			<show id="cloud" delay="0.5"/>
+			<scale2 id="cloud" delay="0.5" time="1.5" from="1" scale="4"/>
+			<animate id="cloud" delay="1.3" opacity="0" time="0.5"/>
+			<show id="T1" delay="1.5"/>
+			<hide id="T1_white" delay="1.5"/>
+			<animate id="spray" x="-400" time="0.3" delay="1.2"/>
+		</step>
+		<step soundID="V030">
+			<hide id="cloud"/>
+			<hide id="spray"/>
+
+			<circleMarker id="T1" delay="0.5" dx="-50"/>
+
+			<pointMarker id="T1_210" delay="8.5"/>
+			<pointMarker id="T1_150" delay="11"/>
+			<underlineMarker id="T1_6tf" delay="15"  color="none"/>
+
+			<underlineMarker id="T1_quest" delay="18" color="none"/>
+		</step>
+		<step soundID="V040">
+			<drop id="c1" delay="0.5"/>
+			<drop id="c2" delay="0.8"/>
+			<drop id="c3" delay="1.1"/>
+		</step>
+		<submit id="Q1">
+			<controls>
+				<chooseControl id="choose1" buttons="c1,c2,c3" correctAnswer="c1" />
+			</controls>
+		</submit>
+		<next if="Q1.incorrect"/>
+		<step if="Q1.incorrect">
+			<replaceAnswerToggle id="choose1" />
+		</step>
+		<step soundID="V045">
+			<dropDown id="c1" delay="5"/>
+			<play id="drop" delay="6"/>
+
+			<dropDown id="c2" delay="1.5"/>
+			<play id="drop" delay="2.5"/>
+
+			<dropDown id="c3" delay="1"/>
+			<play id="drop" delay="2"/>
+
+			<show id="P1_lupa" delay="4.5"/>
+			<scale2 id="P1_lupa" scale="1" from="2" delay="4.5"/>
+			<scale2 id="p1_lupa_content" scale="1" from="2" delay="4.5"/>
+
+			<animate id="P1_lupa" x="+=470" delay="6" time="1"/>
+			<animate id="p1_lupa_content" x="-=705" delay="6" time="1"/>
+
+			<animate id="P1_lupa" x="-=350" y="+=40" delay="8" time="1"/>
+			<animate id="p1_lupa_content" x="+=525" y="-=60" delay="8" time="1"/>
+
+			<animate id="P1_lupa" y="+=100" delay="9.5" time="1"/>
+			<animate id="p1_lupa_content" y="-=150" delay="9.5" time="1"/>
+			<hide id="P1_lupa" delay="9.5"/>
+
+			<turnOver delay="14" id="listbox1_div"/>
+			<play id="fly" delay="14"/>
+		</step>
+		<submit id="Q2">
+			<controls>
+				<control id="listbox1" correctAnswer="6 times fewer"/>
+			</controls>
+		</submit>
+		<next if="Q2.incorrect"/>
+		<step>
+			<replaceAnswerInput id="listbox1"  positionObject="T1_6tf"/>
+		</step>
+		<next if="Q2.incorrect"/>
+		<pause if="Q2.correct" delay="0.5"/>
+		<step>
+			<explode id="listbox1_div"/>
+		</step>
+		<step soundID="V050">
+			<underlineMarker id="T1_quest" delay="2" color="none"/>
+			<underlineMarker id="T1_thanAli" delay="6.5" color="none"/>
+			<show id="T2" delay="8"/>
+			<drop id="T2_dnd" delay="8.5"/>
+		</step>
+		<submit id="Q3">
+			<controls>
+				<control id="input1" correctAnswer="360"/>
+				<dndControl id="dnd" correctAnswer="dc1" cards="dc1,dc2,dc3,dc4" targets="dt1"/>
+			</controls>
+		</submit>
+		<next if="Q3.incorrect"/>
+		<step if="dnd.incorrect">
+			<dndMove id="dnd" />
+		</step>
+		<step>
+			<hide id="T2_dnd"/>
+			<hide id="dt1" keepContent="true" delay="0.5"/>
+		</step>
+		<step if="input1.incorrect">
+			<drop id="column"/>
+			<css id="input1_replace" style="display:block;"/>
+		</step>
+		<step>
+			<replaceAnswerInput id="input1" positionObject="input1_replace"/>
+		</step>
+		<next if="Q3.incorrect"/>
+		<step>
+			<css id="T2_span" style="font-size:36px;"/>
+			<css id="input1_wrap" style="display:none;"/>
+			<css id="input1_2" style="display:inline;"/>
+			<hide id="column"/>
+			<hide id="input1_replace"/>
+		</step>
+		<step soundID="V060">
+			<underlineMarker id="T1_quest" delay="2.5" color="none"/>
+			<underlineMarker id="T1_6tf" delay="5.5" color="none"/>
+			<show id="T4" delay="6"/>
+			<show id="T4_quest" delay="7"/>
+			<scale2 id="T4_quest" delay="7" from="0" scale="1" time="0.5" origin="110px -100px" easing="easeOutBack"/>
+		</step>
+		<submit id="Q4">
+			<controls>
+				<control id="listbox2" correctAnswer="divide"/>
+			</controls>
+		</submit>
+		<next if="Q4.incorrect"/>
+		<step>
+			<replaceAnswerInput id="listbox2" />
+		</step>
+		<step soundID="V070">
+			<scale2 id="T4_quest" from="1" scale="0" time="0.5" easing="easeInBack"/>
+			<show id="T4_div_sign" delay="0.3"/>
+			<hide id="T4_quest" delay="0.5"/>
+
+			<show id="T4_eq,input2_wrap,T4_tail" delay="3.8" stagger="0.2"/>
+		</step>
+		<submit id="Q5">
+			<controls>
+				<control id="input2" correctAnswer="60"/>
+			</controls>
+		</submit>
+		<step if="Q5.correct"  soundID="V080">
+			<replaceAnswerInput id="input2" />
+		</step>
+		<next if="Q5.incorrect"/>
+		<step if="Q5.incorrect" soundID="V090">
+			<replaceAnswerInput id="input2" />
+		</step>
+		<step>
+			<css id="input2_wrap" style="display:none;"/>
+			<css id="input2_2" style="display:inline;"/>
+		</step>
+		<pause delay="0.5"/>
+		<step>
+			<hide id="T1"/>
+			<scale2 id="P1" scale="1" time="0.5"/>
+			<play id="fly" />
+			<rotate2 id="P1_wrap" from="-20" to="0" delay="0" time="0.5"/>
+			<animate id="P1" x="20" y="100" time="0.5" easing="easeOutBack"/>
+
+			<scale2 id="cover01" scale="1.1" time="0.2" delay="0.4"/>
+			<scale2 id="cover01" scale="1.0" time="0.2" delay="0.6"/>
+			<rotate2 id="cover01" from="0" to="-20" easing="easeOutBack" time="0.5" delay="0.8" origin="90% 10%"/>
+			<animate id="cover01" y="1200" time="0.5" delay="1.3" easing="easeInCubic"/>
+			<play id="drop" delay="1.8"/>
+		</step>
+	</steps>
+	<soundEffects>
+		<sound id="bullet" src="sounds/bullet.mp3"/>
+		<sound id="spray" src="sounds/spray.mp3"/>
+		<sound id="drop" src="sounds/bulb_smash.mp3"/>
+		<sound id="fly" src="sounds/fly.mp3"/>
+		<sound id="page" src="sounds/page.mp3"/>
+	</soundEffects>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>Let me tell you a story. Once upon a time.. there were two boys - Mansour and Ali. They were living on a coast. So they would go to the beach each day and try to find new seashells for their collections… </ttsText>
+		</sound>
+		<sound id="V020" src="sounds/V020.mp3">
+			<ttsText>You see? It is happening again… I’m so glad I have an experienced detective here! </ttsText>
+		</sound>
+		<sound id="V030" src="sounds/V030.mp3">
+			<ttsText>This is much more difficult. You might want to take notes along the way. Ali and Mansour collect seashells. Ali has 210 starfish shells and 150 clamshells. But Mansour has 6 times fewer shells than Ali. How many shells does Mansour have?</ttsText>
+		</sound>
+		<sound id="V040" src="sounds/V040.mp3">
+			<ttsText>What is this mystery about?</ttsText>
+		</sound>
+		<sound id="V045" src="sounds/V045.mp3">
+			<ttsText>Right. Boys are collecting shells. Let’s look for another clue… Ali has 210 and 150 shells. That’s an impressive collection. I don’t see how many shells Mansour has… What can you find out about his collection? </ttsText>
+		</sound>
+		<sound id="V050" src="sounds/V050.mp3">
+			<ttsText>Okay. Size of the Mansours collection is unknown. To reveal it, we have to know how many shells Ali has! I’ll let you do that.</ttsText>
+		</sound>
+		<sound id="V060" src="sounds/V060.mp3">
+			<ttsText>Yay, now we can calculate how many shells Mansour has. Do you remember the clue? What does it mean? </ttsText>
+		</sound>
+		<sound id="V070" src="sounds/V070.mp3">
+			<ttsText>Divide, of course. Now you have all the information! Solve the mystery.</ttsText>
+		</sound>
+		<sound id="V080" src="sounds/V080.mp3">
+			<ttsText>Perfect. </ttsText>
+		</sound>
+		<sound id="V090" src="sounds/V090.mp3">
+			<ttsText>Well, next time. </ttsText>
+		</sound>
+	</sounds>
+</problem>

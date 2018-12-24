@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB000</UID>
+	</attributes>
+	<content bgcolor="#FFBC00">
+		<img id="back" src="img/back.png" style="position:absolute; top:0; left:0;"/>
+		<div id="play" style="position:absolute; top:565px; width:668px; text-align:center;">
+			<img src="img/play.svg" style="width:161px; height:177px;"/>
+		</div>
+		<div id="replay" style="position:absolute; top:810px; left:620px; display:none;">
+			<img src="img/replay.svg" style="width:89px; height:89px;"/>
+		</div>
+	</content>
+	<steps>
+		<next customID="play"/>
+		<step soundID="V010">
+			<animate id="play" opacity="0"/>
+		</step>
+		<step>
+			<animate id="play" opacity="100"/>
+		</step>
+		<next customID="play" customReplayID="replay"/>
+	</steps>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>Hello again! Do you know that word problems are much like mysteries? Today, we are going to be detectives who solve them!</ttsText>
+		</sound>
+	</sounds>
+</problem>

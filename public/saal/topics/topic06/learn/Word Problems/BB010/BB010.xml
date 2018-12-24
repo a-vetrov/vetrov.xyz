@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<problem>
+	<attributes>
+		<UID>6-T06-BB010</UID>
+	</attributes>
+	<content>
+		<div id="robot11" style="position:absolute; top:100px; left:800px;">
+			<img id="robo1" src="img/robot11.png" style="position:absolute; top:0px; left:0px;"/>
+			<img id="body1" src="img/body1.png" style="position:absolute; top:78px; left:6px;"/>
+		</div>
+		<div id="robot21" style="position:absolute; top:400px; left:-380px;">
+			<img id="robo2" src="img/robot21.png" style="position:absolute; top:0px; left:37px;"/>
+			<img id="body2" src="img/body2.png" style="position:absolute; top:57px; left:0px;"/>
+		</div>
+		<img id="robot1" src="img/robot1.png" style="position:absolute; top:100px; left:600px;"/>
+		<img id="robot2" src="img/robot2.png" style="position:absolute; top:400px; left:-100px;"/>
+		<div id="robot" style="position:absolute; top:350px; left:800px;">
+			<img id="wheel" src="img/wheel.png" style="position:absolute; top:240px; left:185px;"/>
+			<img id="robo" src="img/robot.png" style="position:absolute; top:0px; left:0px;"/>
+			<img id="eye" src="img/eye.png" style="position:absolute; top:48px; left:147px;"/>
+			<img id="glass" src="img/glass.png" style="position:absolute; top:15px; left:112px;"/>
+		</div>
+		<div id="puzzle" style="position:absolute; top:107px; left:22px; width:724px; height:508px;">
+			<div id="puzzle1">
+				<img id="picture" src="img/picture.png" style="position:absolute; top:0px; left:0px; display:none;"/>
+				<img id="cover1" src="img/cover1.png" style="position:absolute; top:20px; left:19px; display:none;"/>
+				<img id="cover2" src="img/cover2.png" style="position:absolute; top:20px; left:190px; display:none;"/>
+				<img id="cover3" src="img/cover3.png" style="position:absolute; top:20px; left:362px; display:none;"/>
+				<img id="cover4" src="img/cover4.png" style="position:absolute; top:20px; left:535px; display:none;"/>
+				<img id="cover5" src="img/cover5.png" style="position:absolute; top:254px; left:19px; display:none;"/>
+				<img id="cover6" src="img/cover6.png" style="position:absolute; top:254px; left:190px; display:none;"/>
+				<img id="cover7" src="img/cover7.png" style="position:absolute; top:254px; left:362px; display:none;"/>
+				<img id="cover8" src="img/cover8.png" style="position:absolute; top:254px; left:535px; display:none;"/>
+			</div>
+		</div>
+		<p id="T1" style="position:absolute; top:55px; left:-700px; white-space:nowrap;">Reem had a party yesterday. She got <span id="T1_6p">6 presents</span><br/>from her friends and <span id="T1_18p">18 presents</span> from her cousins. <span id="T1_q1">How</span><br/><span id="T1_q2">many presents did Reem get in total?</span></p>
+		<div id="T1big" style="position:absolute; top:208px; left:808px; width:109px; height:109px; overflow:hidden; border-radius:60px;">
+			<img id="T1img" src="img/T1img.png" style="position:absolute; top:-174px; left:-928px;"/>
+		</div>
+
+		<p id="answer" style="position:absolute; top:250px; left:800px; font-size:36px; white-space:nowrap;">Answer: <input id="input1" type="number"/> presents</p>
+
+		<div id="T2" style="position:absolute; top:200px; left:50px; white-space:nowrap; width:666px; height:115px; display:none;">
+			<img id="table" src="img/table.png" style="position:absolute; top:0px; left:0px;"/>
+			<span id="tableT1" style="position:absolute; top:12px; left:25px;">Word clue</span>
+			<span id="tableT2" style="position:absolute; top:12px; left:360px;">Math operation</span>
+			<span id="tableT3" style="position:absolute; top:65px; left:25px; display:none;">In total</span>
+			<span id="tableT4" style="position:absolute; top:65px; left:360px; display:none;">Addition (<b>+</b>)</span>
+			<div id="underline3" style="position:absolute; top:72px; left:360px; opacity:0; width:136px; height:18px;"> </div>
+		</div>
+		<div id="T3" style="position:absolute; top:335px; left:50px;">
+			<img id="braceTotal" src="img/braceTotal.png" style="position:absolute; top:43px; left:0px; display:none;"/>
+			<img id="line1" src="img/line1.png" style="position:absolute; top:83px; left:0px; display:none;"/>
+			<img id="line2" src="img/line2.png" style="position:absolute; top:83px; left:167px; display:none;"/>
+			<img id="brace1" src="img/brace1.png" style="position:absolute; top:96px; left:0px; display:none;"/>
+			<img id="brace2" src="img/brace2.png" style="position:absolute; top:96px; left:167px; display:none;"/>
+			<span id="qu" style="position:absolute; top:0px; left:325px; font-weight:bold; font-size:36px; display:none;">?</span>
+			<span id="number6" style="position:absolute; top:127px; left:75px; color:#FF7733; font-size:36px; display:none;">6</span>
+			<span id="number18" style="position:absolute; top:127px; left:400px; color:#03A2FF; font-size:36px; display:none;">18</span>
+		</div>
+
+		<div class="popup" id="lbPopup" style="position:absolute; top:530px; left:274px; width:150px; padding-top:90px; text-align:center; display:none;">
+			<select id="listbox" style="width:150px;">
+				<option value="multiply">multiply</option>
+				<option value="add">add</option>
+				<option value="subtract">subtract</option>
+				<option value="divide">divide</option>
+			</select>
+		</div>
+		<div id="T4_1" style="position:absolute; top:565px; left:330px; font-size:36px;">
+			<span id="T4_6" style="position:absolute; top:0px; left:0px; color:#FF7733; font-weight:bold; display:none;">6</span>
+			<span id="T4_plus" style="position:absolute; top:0px; left:35px; font-weight:bold; display:none;">+</span>
+			<span id="T4_qu" style="position:absolute; top:0px; left:38px; font-weight:bold; display:none;">?</span>
+			<span id="T4_18" style="position:absolute; top:0px; left:69px; color:#03A2FF; font-weight:bold; display:none;">18</span>
+		</div>
+		<p id="T4_2" style="position:absolute; top:560px; left:173px; white-space:nowrap; display:none;"><span id="T4_24" style="font-size:36px; font-weight:bold;">= <input id="input2" type="number"/></span> (presents) - Reem got in total</p>
+
+		<img id="lupa" src="img/lupa.png" style="position:absolute; top:200px; left:800px;"/>
+		<span id="num6" style="position:absolute; top:56px; left:465px; font-size:30px; color:#FF7733; display:none;">6</span>
+		<span id="num18" style="position:absolute; top:95px; left:290px; font-size:30px; color:#03A2FF; display:none;">18</span>
+		<span id="inTotal" style="position:absolute; top:136px; left:366px; font-size:30px; display:none;">In total</span>
+	</content>
+	<steps>
+		<next/>
+		<step>
+			<animate id="robot1" x="+=200px" time="0.8"/>
+			<animate id="robot2" x="-=280px" time="0.8"/>
+			<show id="picture" delay="0.1"/>
+			<scale2 id="picture" from="0" scale="1" time="0.8"/>
+		</step>
+		<step>
+			<play id="cover" delay="0.1"/>
+			<play id="cover" delay="0.3"/>
+			<play id="cover" delay="0.5"/>
+			<play id="cover" delay="0.7"/>
+			<blind id="cover1" direction="up" easing="easeInCubic" time="0.2"/>
+			<blind id="cover2" direction="up" easing="easeInCubic" time="0.2" delay="0.2"/>
+			<blind id="cover3" direction="up" easing="easeInCubic" time="0.2" delay="0.4"/>
+			<blind id="cover4" direction="up" easing="easeInCubic" time="0.2" delay="0.6"/>
+			<blind id="cover5" direction="down" easing="easeInCubic" time="0.2"/>
+			<blind id="cover6" direction="down" easing="easeInCubic" time="0.2" delay="0.2"/>
+			<blind id="cover7" direction="down" easing="easeInCubic" time="0.2" delay="0.4"/>
+			<blind id="cover8" direction="down" easing="easeInCubic" time="0.2" delay="0.6"/>
+		</step>
+		<step soundID="V010">
+			<scale2 id="puzzle1" origin="362px 254px" scale="0.34" time="0.5" easing="easeInBack" delay="1.5"/>
+			<animate id="puzzle" x="-130px" y="624px" time="1.5" delay="2.2" easing="easeInCubic"/>
+			<rotate2 id="puzzle" from="0" to="-366" origin="362px 254px" time="1.5" delay="2.2" easing="easeInCubic"/>
+			
+			<animate id="robot11" x="-=200px" time="0.8" delay="3.7"/>
+			<animate id="robot21" x="+=280px" time="0.8" delay="3.7"/>
+			
+			<animate id="body1" x="-=15px" y="-=15px" time="0.2" delay="7.7"/>
+			<animate id="body2" x="+=15px" y="-=15px" time="0.2" delay="7.7"/>
+			<animate id="body1" x="+=15px" y="+=15px" time="0.2" delay="7.9"/>
+			<animate id="body2" x="-=15px" y="+=15px" time="0.2" delay="7.9"/>
+			<animate id="body1" x="-=15px" y="-=15px" time="0.2" delay="8.1"/>
+			<animate id="body2" x="+=15px" y="-=15px" time="0.2" delay="8.1"/>
+			<animate id="body1" x="+=15px" y="+=15px" time="0.2" delay="8.3"/>
+			<animate id="body2" x="-=15px" y="+=15px" time="0.2" delay="8.3"/>
+			
+			<animate id="robot11" x="+=200px" time="0.8" delay="9.5"/>
+			<animate id="robot21" x="-=280px" time="0.8" delay="9.5"/>
+			
+			<animate id="T1" x="50px" delay="10.5" easing="easeInCubic"/>
+			<animate id="answer" x="50px" delay="10.5" easing="easeInCubic"/>
+
+			<play id="wheelSound" delay="10.5"/>
+			<animate id="robot" x="-=450px" time="1.0" delay="10.5" easing="easeOutCubic"/>
+			<rotate2 id="wheel" from="0" to="-540" time="1.0" delay="10.5" easing="easeOutCubic"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="11.8"/>
+			<play id="blink" delay="11.9"/>
+			<blind id="eye" direction="down" time="0.2" delay="12.1"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="12.4"/>
+			<play id="blink" delay="12.5"/>
+			<blind id="eye" direction="down" time="0.2" delay="12.7"/>
+		</step>
+		<pause delay="0.5"/>
+		<step soundID="V020">
+			<circleMarker id="T1" delay="1.0"/>
+			<underlineMarker id="T1_6p" color="none" delay="7.6"/>
+			<underlineMarker id="T1_18p" color="none" delay="10.0"/>
+			<underlineMarker id="T1_q1" color="none" delay="12.0" standby="-1"/>
+			<underlineMarker id="T1_q2" color="none" delay="13.0"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="0.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="0.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="1.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="1.9"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="3.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="3.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="4.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="4.9"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="6.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="6.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="7.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="7.9"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="9.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="9.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="10.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="10.9"/>
+			
+		</step>
+		<submit id="Q1">
+			<controls>
+				<control id="input1" correctAnswer="24"/>
+			</controls>
+		</submit>
+		<step soundID="V030" if="Q1.correct"/>
+
+		<!--incorrect branch-->
+		<next if="Q1.incorrect"/>
+		<step soundID="V040" if="Q1.incorrect">
+			<hide id="answer"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="0.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="0.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="1.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="1.9"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="3.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="3.4"/>
+
+			<blind id="eye" direction="down" time="0.2" delay="4.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="4.9"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="6.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="6.4"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="7.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="7.9"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="9.1"/>
+			<blind id="eye" direction="down" time="0.2" delay="9.4"/>
+			
+			<blind id="eye" direction="down" time="0.2" delay="10.6"/>
+			<blind id="eye" direction="down" time="0.2" delay="10.9"/>
+			
+			<rotate2 id="lupa" from="0" to="-45" origin="63px 63px" time="0.0"/>
+			<blind direction="up" id="T2" delay="1.5"/>
+
+			<animate id="lupa" y="-=170px" x="-=250px" time="1.0" delay="3.0"/>
+			<animate id="T1big" y="-=170px" x="-=250px" time="1.0" delay="3.0"/>
+			<animate id="T1img" y="+=170px" x="+=250px" time="1.0" delay="3.0"/>
+
+			<rotate2 id="lupa" from="-45" to="-100" origin="63px 63px" time="1.0" delay="4.2"/>
+			<animate id="lupa" y="+=50px" x="-=280px" time="1.0" delay="4.2"/>
+			<animate id="T1big" y="+=50px" x="-=280px" time="1.0" delay="4.2"/>
+			<animate id="T1img" y="-=50px" x="+=350px" time="1.0" delay="4.2"/>
+
+			<rotate2 id="lupa" from="-100" to="15" origin="63px 63px" time="1.0" delay="5.4"/>
+			<animate id="lupa" y="-=50px" x="-=80px" time="1.0" delay="5.4"/>
+			<animate id="T1big" y="-=50px" x="-=80px" time="1.0" delay="5.4"/>
+			<animate id="T1img" y="+=50px" x="+=100px" time="1.0" delay="5.4"/>
+
+			<rotate2 id="lupa" from="15" to="60" origin="63px 63px" time="1.0" delay="6.6"/>
+			<animate id="lupa" y="+=50px" x="-=120px" time="1.0" delay="6.6"/>
+			<animate id="T1big" y="+=50px" x="-=120px" time="1.0" delay="6.6"/>
+			<animate id="T1img" y="-=50px" x="+=150px" time="1.0" delay="6.6"/>
+
+			<animate id="lupa" y="+=15px" x="+=280px" time="1.6" delay="7.8"/>
+			<animate id="T1big" y="+=15px" x="+=280px" time="1.6" delay="7.8"/>
+			<animate id="T1img" y="-=15px" x="-=350px" time="1.6" delay="7.8"/>
+			
+			<show id="inTotal" delay="13.0"/>
+			<animate id="inTotal" x="-=289px" y="+=122px" time="0.3" delay="13.4"/>
+			<scale2 id="inTotal" scale="0.8" origin="left bottom" delay="13.7"/>
+			<show id="tableT3" delay="14.0"/>
+			<hide id="inTotal" delay="14.0"/>
+			<blind id="tableT4" direction="left" delay="15.8"/>
+			<underlineMarker id="underline3" color="none" delay="15.9"/>
+		</step>
+		<step if="Q1.incorrect">
+			<play id="wheelSound" delay="0.0"/>
+			<animate id="robot" x="-=720px" time="1.0" delay="0.0" easing="easeInCubic"/>
+			<rotate2 id="wheel" from="-540" to="-1404" time="1.0" delay="0.0" easing="easeInCubic"/>
+		</step>
+		<step soundID="V050" if="Q1.incorrect">
+			<blind id="line1" time="0.1" direction="left" delay="0.0"/>
+			<blind id="line2" time="0.3" direction="left" delay="0.1"/>
+			<blind id="braceTotal" time="0.4" direction="left" delay="0.4"/>
+			<drop id="qu" delay="0.9"/>
+			
+			<rotate2 id="lupa" from="60" to="45" origin="63px 63px" time="1.0" delay="0.0"/>
+			<animate id="lupa" y="-=80px" x="-=240px" time="1.2" delay="0.0" easing="linear"/>
+			<animate id="T1big" y="-=80px" x="-=240px" time="1.2" delay="0.0" easing="linear"/>
+			<animate id="T1img" y="+=80px" x="+=300px" time="1.2" delay="0.0" easing="linear"/>
+			
+			<animate id="lupa" y="-=0px" x="+=480px" time="1.9" delay="1.3" easing="linear"/>
+			<animate id="T1big" y="-=0px" x="+=480px" time="1.9" delay="1.3" easing="linear"/>
+			<animate id="T1img" y="+=0px" x="-=600px" time="1.9" delay="1.3" easing="linear"/>
+			
+			<animate id="lupa" y="-=0px" x="-=170px" time="0.3" delay="3.5" easing="easeOutCubic"/>
+			<animate id="T1big" y="-=0px" x="-=170px" time="0.3" delay="3.5" easing="easeOutCubic"/>
+			<animate id="T1img" y="+=0px" x="+=212px" time="0.3" delay="3.5" easing="easeOutCubic"/>
+			
+			<show id="num6" delay="4.6"/>
+			<blind id="brace1" time="0.2" direction="left" delay="6.4"/>
+			<animate id="num6" x="126px" y="467px" time="1.0" delay="5.4"/>
+			<scale id="num6" scale="1.2" time="0.2" delay="6.4"/>
+			<show id="number6" delay="6.6"/>
+			
+			<rotate2 id="lupa" from="45" to="-45" origin="63px 63px" time="0.6" delay="6.7"/>
+			<animate id="lupa" y="+=40px" x="-=180px" time="0.6" delay="6.7" easing="linear"/>
+			<animate id="T1big" y="+=40px" x="-=180px" time="0.6" delay="6.7" easing="linear"/>
+			<animate id="T1img" y="-=40px" x="+=235px" time="0.6" delay="6.7" easing="linear"/>
+			
+			<show id="num18" delay="7.6"/>
+			<blind id="brace2" time="0.2" direction="left" delay="9.3"/>
+			<animate id="num18" x="454px" y="467px" time="1.0" delay="8.3"/>
+			<scale id="num18" scale="1.2" time="0.2" delay="9.3"/>
+			<show id="number18" delay="9.5"/>
+			
+			<rotate2 id="lupa" from="-45" to="-400" origin="63px 63px" time="1.0" delay="9.5"/>
+			<animate id="lupa" y="-=300px" x="-=320px" time="1.0" delay="9.5" easing="linear"/>
+			<animate id="T1big" y="-=300px" x="-=320px" time="1.0" delay="9.5" easing="linear"/>
+			<animate id="T1img" y="+=300px" x="+=400px" time="1.0" delay="9.5" easing="linear"/>
+			
+			<show id="lbPopup,T4_qu" delay="10.5"/>
+			<animate id="num6" x="331px" y="565px" style="font-weight:bold" time="0.5" delay="12.0"/>
+			<animate id="num18" x="401px" y="565px" style="font-weight:bold" time="0.5" delay="12.0"/>
+			<show id="T4_6,T4_18" delay="12.6"/>
+			<hide id="num6,num18" delay="12.6"/>
+		</step>
+		<submit id="Q2" if="Q1.incorrect">
+			<controls>
+				<control id="listbox" correctAnswer="add"/>
+			</controls>
+		</submit>
+		<next if="Q1.incorrect &amp;&amp; Q2.incorrect"/>
+		<step if="Q1.incorrect &amp;&amp; Q2.incorrect">
+			<replaceAnswerInput id="listbox"/>
+		</step>
+		<next if="Q1.incorrect &amp;&amp; Q2.incorrect"/>
+		<step if="Q1.incorrect">
+			<hide id="T4_qu"/>
+			<drop id="T4_plus" delay="0.1"/>
+			<hide id="lbPopup" delay="0.6"/>
+		</step>
+		<step soundID="V060" if="Q1.incorrect">
+			<animate id="T4_1" x="50px" time="0.3"/>
+			<show id="T4_2" delay="0.4"/>
+			<underlineMarker id="T1_q1" color="none" delay="3.0" standby="-1"/>
+			<underlineMarker id="T1_q2" color="none" delay="4.0"/>
+		</step>
+		<submit id="Q3" if="Q1.incorrect">
+			<controls>
+				<control id="input2" correctAnswer="24"/>
+			</controls>
+		</submit>
+		<step soundID="V070" if="Q1.incorrect &amp;&amp; Q3.correct"/>
+		<step if="Q1.incorrect">
+			<replaceAnswerInput id="input2"/>
+			<animate id="T4_2" y="+=5px" delay="0.2"/>
+		</step>
+		<step soundID="V080" if="Q1.incorrect &amp;&amp; Q3.incorrect"/>
+		<!--End of Incorrect branch-->
+		<step if="Q1.correct">
+			<replaceAnswerInput id="input1"/>
+			<play id="wheelSound" delay="0.0"/>
+			<animate id="robot" x="-=720px" time="1.0" delay="0.0" easing="easeInCubic"/>
+			<rotate2 id="wheel" from="-540" to="-1404" time="1.0" delay="0.0" easing="easeInCubic"/>
+		</step>
+		<step>
+			<animate id="answer" x="800px" time="0.5" easing="easeOutCubic" if="Q1.correct"/>
+			<animate id="T1" x="-700px" time="0.5" easing="easeOutCubic"/>
+			<hide id="T2,T3,T4_1,T4_2"/>
+			<animate id="puzzle" x="22px" y="107px" time="1.5" easing="easeInCubic"/>
+			<rotate2 id="puzzle" from="-366" to="0" origin="362px 254px" time="1.5" easing="easeInCubic"/>
+			<scale2 id="puzzle1" origin="362px 254px" scale="1" time="0.5" easing="easeInBack" delay="1.6"/>
+			<play id="cover" delay="2.4"/>
+			<blind id="cover1" direction="up" delay="2.3" easing="easeInCubic" time="0.2"/>
+		</step>
+	</steps>
+	<soundEffects>
+		<sound id="cover" src="sounds/cover.mp3"/>
+		<sound id="wheelSound" src="sounds/wheel.mp3"/>
+		<sound id="blink" src="sounds/blink.mp3"/>
+	</soundEffects>
+	<sounds>
+		<sound id="V010" src="sounds/V010.mp3">
+			<ttsText>Wait, what was that? Was it an old photograph? A picture from the future? Did you manage to view it? Ah…I did not. I’d like to investigate the situation!</ttsText>
+		</sound>
+		<sound id="V020" src="sounds/V020.mp3">
+			<ttsText>Here we go. It is our first mystery to solve. Reem had a party yesterday. She got 6 presents from her friends and 18 presents from her cousins. How many presents did Reem get in total?</ttsText>
+		</sound>
+		<sound id="V030" src="sounds/V030.mp3">
+			<ttsText>Hooray! First mystery is solved!</ttsText>
+		</sound>
+		<sound id="V040" src="sounds/V040.mp3">
+			<ttsText>Well, can we find a clue? Do you know that finding clues is the most important and the most difficult part of an investigation? Anyway, let’s see.. In total! To find a whole, add the parts.</ttsText>
+		</sound>
+		<sound id="V050" src="sounds/V050.mp3">
+			<ttsText>On to the next clue! Found them - 6 and 18. What do we do with the parts?</ttsText>
+		</sound>
+		<sound id="V060" src="sounds/V060.mp3">
+			<ttsText>Try to solve the mystery again! How many presents did Reem get in total?</ttsText>
+		</sound>
+		<sound id="V070" src="sounds/V070.mp3">
+			<ttsText>Nice.</ttsText>
+		</sound>
+		<sound id="V080" src="sounds/V080.mp3">
+			<ttsText>Well, next time.</ttsText>
+		</sound>
+	</sounds>
+</problem>
