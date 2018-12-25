@@ -37,8 +37,8 @@ class Portfolio extends Component {
                         </p>
                     </details>
                 </Card>
-                <Card key="azpuzzle" onDetailsClick={this.handleDetailsClick.bind(this, "azpuzzle")}
-                      isOpen={this.state.openCardId === "azpuzzle"} exampleHref="./azpuzzle/">
+                <Card key="speaking-keyboard" onDetailsClick={this.handleDetailsClick.bind(this, "speaking-keyboard")}
+                      isOpen={this.state.openCardId === "speaking-keyboard"} exampleHref="./speaking-keyboard/">
                     <header>Говорящий алфавит</header>
                     <body>
                         Разработка интерактивной игры для маленьких детей, изучающих азбуку.
@@ -53,7 +53,7 @@ class Portfolio extends Component {
                             Она является JavaScript версией ранее разработанной Flash-игры.
                         </p>
                         <p>
-                            При разработке использованы технологии: ES6 JavaScript, HTML5, CSS3, jQuery.
+                            При разработке использованы технологии: React, ES6 JavaScript, HTML5, CSS3.
                         </p>
                     </details>
                 </Card>
