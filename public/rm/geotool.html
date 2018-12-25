@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Geotool</title>
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			(function () {
+                let flashWidth = 900 ;
+                let flashHeight = 600 ;
+                const ratio = flashWidth / flashHeight ;
+                const hh = document.documentElement.clientHeight - 10;
+                const ww = document.documentElement.clientWidth - 10;
+                const currentRatio = ww / hh ;
+                const k = currentRatio > ratio ? hh / flashHeight : ww / flashWidth ;
+                flashHeight *= k ;
+                flashWidth *= k ;
+                swfobject.embedSWF("geotool.swf", "myContent", flashWidth, flashHeight, "10.0.0", "expressInstall.swf");
+            })() ;
+
+		</script>
+		<style>
+			body {
+				margin:0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="myContent">
+			<p>Для просмотра необходим установленный Adobe Flash Player</p>
+			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>
+	</body>
+</html>
