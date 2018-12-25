@@ -43,7 +43,7 @@ class Portfolio extends Component {
                     <body><p>Разработка инструмента для геометрических построений.</p></body>
                     <details>
                         <p>
-                            Мной был разработан геометрический тул, позволяющий ученику строить  геометрические построения.
+                            Мной был разработан геометрический тул, позволяющий ученику строить геометрические построения.
                             Инструмент позволяет анализировать ответ ученика и проверять его правильность, исправлять
                             неверные элементы при частично-правильном ответе, объяснять ответ в форме обучающей анимации.
                         </p>
@@ -57,11 +57,26 @@ class Portfolio extends Component {
                         <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
                     </details>
                 </Card>
-                <p>Portfolio some text</p>
-                <p>Portfolio some text</p>
-                <p>Portfolio some text</p>
-                <p>Portfolio some text</p>
-                <p>Portfolio some text</p>
+                <Card key="Ufo" onDetailsClick={this.handleDetailsClick.bind(this, "Ufo")}
+                      isOpen={this.state.openCardId === "Ufo"}  exampleHref="./rm/ufo.html">
+                    <header>Ufo game</header>
+                    <body><p>Разработка интерактивной обучающей игры Ufo.</p></body>
+                    <details>
+                        <p>
+                            Мной была разработана игра, направленная на закрепление/повторение учеником понятия "unknown".
+                        </p>
+                        <p>
+                            При неправильном ответе ученику дается небольшое объяснение. При хорошем проценте правильных
+                            ответов в конце игры дается поздравительная анимация.
+                        </p>
+                        <p>
+                            Данная игра с различными вопросами используется в нескольких местах курса
+                            <a href="https://www.reasoningmind.org/programs/foundations/" target="_blank" rel="noopener noreferrer"> Foundations </a>
+                            компании ReasoningMind.
+                        </p>
+                        <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
+                    </details>
+                </Card>
             </div>
         );
     }
