@@ -33,7 +33,27 @@ class Portfolio extends Component {
                             приложении с помощью WebView компоненты.
                         </p>
                         <p>
-                            При разработке использованы технологии: HTML5, CSS3, jQuery, Pure JS.
+                            При разработке использованы технологии: ES5 JavaScript, HTML5, CSS3, jQuery.
+                        </p>
+                    </details>
+                </Card>
+                <Card key="azpuzzle" onDetailsClick={this.handleDetailsClick.bind(this, "azpuzzle")}
+                      isOpen={this.state.openCardId === "azpuzzle"} exampleHref="./azpuzzle/">
+                    <header>Говорящий алфавит</header>
+                    <body>
+                        Разработка интерактивной игры для маленьких детей, изучающих азбуку.
+                    </body>
+                    <details>
+                        <p>
+                            Говорящий алфавит - онлайн игра для изучения букв русского алфавита. Выбирая буквы алфавита,
+                            дети прослушивают их названия и смотрят картинки.
+                        </p>
+                        <p>
+                            Игра разрабатывалась для сайта <a href="http://додоша.рф/" target="_blank"  rel="noopener noreferrer"> додоша.рф</a>.
+                            Она является JavaScript версией ранее разработанной Flash-игры.
+                        </p>
+                        <p>
+                            При разработке использованы технологии: ES6 JavaScript, HTML5, CSS3, jQuery.
                         </p>
                     </details>
                 </Card>
@@ -52,6 +72,27 @@ class Portfolio extends Component {
                             которые активно используются в продуктах
                             <a href="https://www.reasoningmind.org/programs/foundations/" target="_blank" rel="noopener noreferrer"> Foundations </a>
                             и <a href="https://www.reasoningmind.org/programs/staar-readiness/" target="_blank" rel="noopener noreferrer"> STAAR Readiness </a>
+                            компании ReasoningMind.
+                        </p>
+                        <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
+                    </details>
+                </Card>
+                <Card key="Truck" onDetailsClick={this.handleDetailsClick.bind(this, "Truck")}
+                      isOpen={this.state.openCardId === "Truck"}  exampleHref="./rm/ufo.html">
+                    <header>Truck time game</header>
+                    <body><p>Разработка интерактивной обучающей игры Truck time.</p></body>
+                    <details>
+                        <p>
+                            Мной была разработана игра, направленная на закрепление/повторение учеником правила проверки
+                            деления умножением.
+                        </p>
+                        <p>
+                            При неправильном ответе ученику дается небольшое объяснение. При хорошем проценте правильных
+                            ответов в конце игры дается поздравительная анимация.
+                        </p>
+                        <p>
+                            Данная игра с различными вопросами используется в нескольких местах курса
+                            <a href="https://www.reasoningmind.org/programs/foundations/" target="_blank" rel="noopener noreferrer"> Foundations </a>
                             компании ReasoningMind.
                         </p>
                         <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
