@@ -4,7 +4,7 @@ import './Portfolio.css' ;
 class Card extends Component {
 
     render() {
-        const {isOpen, onDetailsClick, exampleHref} = this.props ;
+        const {isOpen, onDetailsClick, exampleHref, sourceCodeHref} = this.props ;
 
         let childArr = React.Children.toArray(this.props.children) ;
         let cardHeader = null, cardBody = null, cardDetails = null ;
@@ -19,6 +19,7 @@ class Card extends Component {
         }) ;
 
         const exampleButton = exampleHref ? <a className="Portfolio-card-button" href={exampleHref} target="_blank"  rel="noopener noreferrer">Пример</a> : null ;
+        const sourceCodeeButton = sourceCodeHref ? <a className="Portfolio-card-button" href={sourceCodeHref} target="_blank"  rel="noopener noreferrer">Source code</a> : null ;
 
         return (
             <div className="Portfolio-card">
@@ -27,6 +28,7 @@ class Card extends Component {
                 {cardDetails}
                 <div className="Portfolio-card-buttons-container">
                     {exampleButton}
+                    {sourceCodeeButton}
                     <button className="Portfolio-card-button" onClick={onDetailsClick}>
                         {isOpen ? 'Свернуть' : 'Подробнее'}
                     </button>

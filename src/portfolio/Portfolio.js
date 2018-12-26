@@ -38,7 +38,8 @@ class Portfolio extends Component {
                     </details>
                 </Card>
                 <Card key="speaking-keyboard" onDetailsClick={this.handleDetailsClick.bind(this, "speaking-keyboard")}
-                      isOpen={this.state.openCardId === "speaking-keyboard"} exampleHref="./speaking-keyboard/">
+                      isOpen={this.state.openCardId === "speaking-keyboard"} exampleHref="./speaking-keyboard/"
+                      sourceCodeHref="https://github.com/a-vetrov/speaking-keyboard">
                     <header>Говорящий алфавит</header>
                     <body>
                         Разработка интерактивной игры для маленьких детей, изучающих азбуку.
