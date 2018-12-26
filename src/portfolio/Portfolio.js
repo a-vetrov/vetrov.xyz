@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Card from './Card' ;
 import './Portfolio.css' ;
+import geotoolImage from './geotool.png' ;
+import geotoolImagePreview from './geotool_min.png' ;
 
 class Portfolio extends Component {
 
@@ -13,6 +15,10 @@ class Portfolio extends Component {
     }
 
     render() {
+
+        const images = {
+           geotool : [<img src={geotoolImagePreview} alt="Geotool"/>, <img src={geotoolImage} alt="Geotool"/> ]
+        } ;
 
         return (
             <div>
@@ -37,6 +43,7 @@ class Portfolio extends Component {
                         </p>
                     </details>
                 </Card>
+
                 <Card key="speaking-keyboard" onDetailsClick={this.handleDetailsClick.bind(this, "speaking-keyboard")}
                       isOpen={this.state.openCardId === "speaking-keyboard"} exampleHref="./speaking-keyboard/"
                       sourceCodeHref="https://github.com/a-vetrov/speaking-keyboard">
@@ -58,8 +65,31 @@ class Portfolio extends Component {
                         </p>
                     </details>
                 </Card>
+
+                <Card key="azpuzzle" onDetailsClick={this.handleDetailsClick.bind(this, "azpuzzle")}
+                      isOpen={this.state.openCardId === "azpuzzle"} exampleHref="./azpuzzle/"
+                      sourceCodeHref="https://github.com/a-vetrov/a-z-puzzle">
+                    <header>Собери слово</header>
+                    <body>
+                        Разработка интерактивной игры-пазла для маленьких детей, учащихся читать.
+                    </body>
+                    <details>
+                        <p>
+                            Собери слово - онлайн игра-пазл на составление слов из букв. Дети, перетаскивая кусочки
+                            картинки с буквами, должны правильно составить слово. Буквы и слова озвучиваются.
+                        </p>
+                        <p>
+                            Игра разрабатывалась для сайта <a href="http://додоша.рф/" target="_blank"  rel="noopener noreferrer"> додоша.рф</a>.
+                            Она является JavaScript версией ранее разработанной Flash-игры.
+                        </p>
+                        <p>
+                            При разработке использованы технологии: ES6 JavaScript, HTML5, CSS3, jQuery.
+                        </p>
+                    </details>
+                </Card>
+
                 <Card key="Geotool" onDetailsClick={this.handleDetailsClick.bind(this, "Geotool")}
-                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html">
+                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html" images={images['geotool']}>
                     <header>GeoTool</header>
                     <body><p>Разработка инструмента для геометрических построений.</p></body>
                     <details>
@@ -78,6 +108,7 @@ class Portfolio extends Component {
                         <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
                     </details>
                 </Card>
+
                 <Card key="Truck" onDetailsClick={this.handleDetailsClick.bind(this, "Truck")}
                       isOpen={this.state.openCardId === "Truck"}  exampleHref="./rm/ufo.html">
                     <header>Truck time game</header>
@@ -99,6 +130,7 @@ class Portfolio extends Component {
                         <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
                     </details>
                 </Card>
+
                 <Card key="Ufo" onDetailsClick={this.handleDetailsClick.bind(this, "Ufo")}
                       isOpen={this.state.openCardId === "Ufo"}  exampleHref="./rm/ufo.html">
                     <header>Ufo game</header>
