@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Card from './Card' ;
 import './Portfolio.css' ;
 import geotoolImage from './geotool.png' ;
-import geotoolImagePreview from './geotool_min.png' ;
 
 class Portfolio extends Component {
 
@@ -17,7 +16,7 @@ class Portfolio extends Component {
     render() {
 
         const images = {
-           geotool : [<img src={geotoolImagePreview} alt="Geotool"/>, <img src={geotoolImage} alt="Geotool"/> ]
+           geotool : geotoolImage
         } ;
 
         return (
@@ -89,7 +88,7 @@ class Portfolio extends Component {
                 </Card>
 
                 <Card key="Geotool" onDetailsClick={this.handleDetailsClick.bind(this, "Geotool")}
-                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html" images={images['geotool']}>
+                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html" picture={images['geotool']}>
                     <header>GeoTool</header>
                     <body><p>Разработка инструмента для геометрических построений.</p></body>
                     <details>
