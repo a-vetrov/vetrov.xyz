@@ -50,7 +50,7 @@ class About extends Component {
                 <div className="About-row">{this.generateItems(this.toolsNames)}</div>
                 <h2 className="About-h2 ">ПО</h2>
                 <div className="About-row">{this.generateItems(this.softwareNames)}</div>
-                <p>Немного знаком с языками программирования:</p>
+                <p>Знаком с языками программирования:</p>
                 <div className="About-row">{this.generateItems(this.languagesNames)}</div>
             </div>
         );

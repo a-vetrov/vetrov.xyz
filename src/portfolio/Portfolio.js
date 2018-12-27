@@ -22,6 +22,7 @@ class Portfolio extends Component {
 
         return (
             <div>
+                <p>Вот несколько примеров работ, в которых я выполнял программную реализацию:</p>
                 <Card key="Saal" onDetailsClick={this.handleDetailsClick.bind(this, "Saal")}
                       isOpen={this.state.openCardId === "Saal"} exampleHref="./saal/topics/topic06/learn/Word%20Problems/"
                       picture={saalImage}>
@@ -95,7 +96,7 @@ class Portfolio extends Component {
                     <body><p>Разработка инструмента для геометрических построений.</p></body>
                     <details>
                         <p>
-                            Мной был разработан геометрический тул, позволяющий ученику строить геометрические построения.
+                            Мной был разработан тул, позволяющий ученику строить геометрические построения.
                             Инструмент позволяет анализировать ответ ученика и проверять его правильность, исправлять
                             неверные элементы при частично-правильном ответе, объяснять ответ в форме обучающей анимации.
                         </p>
