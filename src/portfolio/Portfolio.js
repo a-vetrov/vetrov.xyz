@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Card from './Card' ;
 import './Portfolio.css' ;
 import geotoolImage from './geotool.png' ;
+import saalImage from './saal.png' ;
+import skeyboardImage from './skeyboard.jpg' ;
+import azpuzzleImage from './azpuzzle.png' ;
+import ufoImage from './ufo.png' ;
+import truckImage from './truck.jpg' ;
 
 class Portfolio extends Component {
 
@@ -15,14 +20,11 @@ class Portfolio extends Component {
 
     render() {
 
-        const images = {
-           geotool : geotoolImage
-        } ;
-
         return (
             <div>
                 <Card key="Saal" onDetailsClick={this.handleDetailsClick.bind(this, "Saal")}
-                      isOpen={this.state.openCardId === "Saal"} exampleHref="./saal/topics/topic06/learn/Word%20Problems/">
+                      isOpen={this.state.openCardId === "Saal"} exampleHref="./saal/topics/topic06/learn/Word%20Problems/"
+                      picture={saalImage}>
                     <header>Saal content player</header>
                     <body>
                     Задачей проекта было создание уроков по математике для детей 7 класса в ОАЭ для компании
@@ -45,7 +47,7 @@ class Portfolio extends Component {
 
                 <Card key="speaking-keyboard" onDetailsClick={this.handleDetailsClick.bind(this, "speaking-keyboard")}
                       isOpen={this.state.openCardId === "speaking-keyboard"} exampleHref="./speaking-keyboard/"
-                      sourceCodeHref="https://github.com/a-vetrov/speaking-keyboard">
+                      sourceCodeHref="https://github.com/a-vetrov/speaking-keyboard" picture={skeyboardImage}>
                     <header>Говорящий алфавит</header>
                     <body>
                         Разработка интерактивной игры для маленьких детей, изучающих азбуку.
@@ -67,7 +69,7 @@ class Portfolio extends Component {
 
                 <Card key="azpuzzle" onDetailsClick={this.handleDetailsClick.bind(this, "azpuzzle")}
                       isOpen={this.state.openCardId === "azpuzzle"} exampleHref="./azpuzzle/"
-                      sourceCodeHref="https://github.com/a-vetrov/a-z-puzzle">
+                      sourceCodeHref="https://github.com/a-vetrov/a-z-puzzle" picture={azpuzzleImage}>
                     <header>Собери слово</header>
                     <body>
                         Разработка интерактивной игры-пазла для маленьких детей, учащихся читать.
@@ -88,7 +90,7 @@ class Portfolio extends Component {
                 </Card>
 
                 <Card key="Geotool" onDetailsClick={this.handleDetailsClick.bind(this, "Geotool")}
-                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html" picture={images['geotool']}>
+                      isOpen={this.state.openCardId === "Geotool"}  exampleHref="./rm/geotool.html" picture={geotoolImage}>
                     <header>GeoTool</header>
                     <body><p>Разработка инструмента для геометрических построений.</p></body>
                     <details>
@@ -109,7 +111,7 @@ class Portfolio extends Component {
                 </Card>
 
                 <Card key="Truck" onDetailsClick={this.handleDetailsClick.bind(this, "Truck")}
-                      isOpen={this.state.openCardId === "Truck"}  exampleHref="./rm/ufo.html">
+                      isOpen={this.state.openCardId === "Truck"}  exampleHref="./rm/truck.html" picture={truckImage}>
                     <header>Truck time game</header>
                     <body><p>Разработка интерактивной обучающей игры Truck time.</p></body>
                     <details>
@@ -131,7 +133,7 @@ class Portfolio extends Component {
                 </Card>
 
                 <Card key="Ufo" onDetailsClick={this.handleDetailsClick.bind(this, "Ufo")}
-                      isOpen={this.state.openCardId === "Ufo"}  exampleHref="./rm/ufo.html">
+                      isOpen={this.state.openCardId === "Ufo"}  exampleHref="./rm/ufo.html" picture={ufoImage}>
                     <header>Ufo game</header>
                     <body><p>Разработка интерактивной обучающей игры Ufo.</p></body>
                     <details>
