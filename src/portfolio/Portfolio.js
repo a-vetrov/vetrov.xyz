@@ -7,6 +7,7 @@ import skeyboardImage from './skeyboard.jpg' ;
 import azpuzzleImage from './azpuzzle.png' ;
 import ufoImage from './ufo.png' ;
 import truckImage from './truck.jpg' ;
+import sseImage from './sse.jpg' ;
 
 class Portfolio extends Component {
 
@@ -108,6 +109,25 @@ class Portfolio extends Component {
                             <a href="https://www.reasoningmind.org/programs/foundations/" target="_blank" rel="noopener noreferrer"> Foundations </a>
                             и <a href="https://www.reasoningmind.org/programs/staar-readiness/" target="_blank" rel="noopener noreferrer"> STAAR Readiness </a>
                             компании ReasoningMind.
+                        </p>
+                        <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
+                    </details>
+                </Card>
+
+                <Card key="sse" onDetailsClick={this.handleDetailsClick.bind(this, "sse")}
+                      isOpen={this.state.openCardId === "sse"}  exampleHref="https://youtu.be/cG_ma64wq8c" picture={sseImage}>
+                    <header>Smarter Solving content player</header>
+                    <body><p>Создание плеера контента для проигрывания интерактивных задач с пошаговым решением.</p></body>
+                    <details>
+                        <p>
+                            Для верстки уроков мной был разработан универсальный XML-формат описания сценария задачи,
+                            позволяющий задать структуру задачи, последовательность вопросов, реакцию на правильный и
+                            неправильный ответы, условные переходы в зависимости от ответа ученика, анимацию объектов на экране.
+                            Для проигрывания сценариев мной был создан плеер данных XML-файлов на ActionScript.
+                        </p>
+                        <p>
+                            С использованием этой платформы было сверстано несколько сотен задач продукта
+                            Smarter Solving компании ReasoningMind.
                         </p>
                         <p>При разработке использованы технологии: AS3, Adobe Flash.</p>
                     </details>
