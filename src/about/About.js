@@ -35,7 +35,7 @@ class About extends Component {
     }
 
     render() {
-        document.title = "Ветров Андрей. О себе" ;
+        document.title = "Андрей Ветров. О себе" ;
 
         return (
             <div>

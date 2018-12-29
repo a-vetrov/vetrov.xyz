@@ -20,7 +20,7 @@ class Portfolio extends Component {
     }
 
     render() {
-        document.title = "Ветров Андрей. Примеры работ" ;
+        document.title = "Андрей Ветров. Примеры работ" ;
 
         return (
 

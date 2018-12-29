@@ -20,7 +20,7 @@ class Contacts extends Component {
         }
     }
     render() {
-        document.title = "Ветров Андрей. Контактная информация" ;
+        document.title = "Андрей Ветров. Контактная информация" ;
 
         return (
             <div>
