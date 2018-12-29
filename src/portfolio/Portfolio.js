@@ -19,8 +19,10 @@ class Portfolio extends Component {
     }
 
     render() {
+        document.title = "Ветров Андрей. Примеры работ" ;
 
         return (
+
             <div>
                 <p>Вот несколько примеров работ, в которых я выполнял программную реализацию:</p>
                 <Card key="Saal" onDetailsClick={this.handleDetailsClick.bind(this, "Saal")}
