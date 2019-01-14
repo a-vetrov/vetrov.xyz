@@ -8,6 +8,7 @@ import azpuzzleImage from './azpuzzle.png' ;
 import ufoImage from './ufo.png' ;
 import truckImage from './truck.jpg' ;
 import sseImage from './sse.jpg' ;
+import currencyImage from './currency.png' ;
 
 class Portfolio extends Component {
 
@@ -45,6 +46,26 @@ class Portfolio extends Component {
                         </p>
                         <p>
                             При разработке использованы технологии: ES5 JavaScript, HTML5, CSS3, jQuery.
+                        </p>
+                    </details>
+                </Card>
+
+                <Card key="Currency" onDetailsClick={this.handleDetailsClick.bind(this, "Currency")}
+                      isOpen={this.state.openCardId === "Currency"} exampleHref="./currency-calculator/"
+                      sourceCodeHref="https://github.com/a-vetrov/currency-calculator" picture={currencyImage}>
+                    <header>Валютный калькулятор</header>
+                    <body>
+                    Онлайн калькулятор валют с загрузкой данных с официального сайта
+                    <a href="http://www.cbr.ru/development/SXML/" target="_blank"  rel="noopener noreferrer"> ЦБ РФ</a>.</body>
+                    <details>
+                        <p>
+                            Калькулятор позволяет вычислить рублевую стоимость произвольной суммы выбранной валюты по курсу Центрального Банка РФ.
+                        </p>
+                        <p>
+                            Это небольшая тестовая работа по загрузке xml-данных со стороннего домена и использования их в React-приложении.
+                        </p>
+                        <p>
+                            При разработке использованы технологии: React + Redux, thunks, ES6.
                         </p>
                     </details>
                 </Card>
