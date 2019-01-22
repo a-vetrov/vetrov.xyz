@@ -9,6 +9,7 @@ import ufoImage from './ufo.png' ;
 import truckImage from './truck.jpg' ;
 import sseImage from './sse.jpg' ;
 import currencyImage from './currency.png' ;
+import sberImage from './sberbank.png' ;
 
 class Portfolio extends Component {
 
@@ -65,7 +66,27 @@ class Portfolio extends Component {
                             Это небольшая тестовая работа по загрузке xml-данных со стороннего домена и использования их в React-приложении.
                         </p>
                         <p>
-                            При разработке использованы технологии: React + Redux, thunks, ES6.
+                            При разработке использованы технологии: React + Redux, thunks, ES6, Bootstrap.
+                        </p>
+                    </details>
+                </Card>
+
+                <Card key="sberbank" onDetailsClick={this.handleDetailsClick.bind(this, "sberbank")}
+                      isOpen={this.state.openCardId === "sberbank"} exampleHref="./sberbank/"
+                      sourceCodeHref="https://github.com/a-vetrov/sberbank" picture={sberImage}>
+                    <header>Интерактивный список кредитных карт</header>
+                    <body>
+                         Приложение представляет собой список из сотны случайно сгенерированных на серевере кредитных карт
+                         с возможностью поиска по последним 4-м цифрам карты, сортировки по дате c возможностью выбора направления сортировки.
+                    </body>
+                    <details>
+                        <p>
+                            В этой небольшой тестовой работе демонстрируется закгрузка данных в формате JSON,
+                            отображение их с помощью React-компонент, сортировка и фильтрация данных на клиенте.
+                            Применена резиновая верстка под различные разрешения экрана, адаптивная верстка под мобильные устройства.
+                        </p>
+                        <p>
+                            При разработке использованы технологии: React, ES6, CSS3.
                         </p>
                     </details>
                 </Card>
